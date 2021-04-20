@@ -3,8 +3,24 @@
     padding: 0;
 }
 
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #222222;
+}
+
+a:hover {
+    color: #222222;
+}
+
+
 body {
     font-family: 'Lato', sans-serif;
+
 }
 
 .header {
@@ -842,17 +858,22 @@ body {
     position: relative;
 }
 
-.filter-border-name::-webkit-details-marker {
-    display: none;
+.filter-border-name::after {
+    content: '\f0d7';
+    color: #6f6e6e;
+    font-family: "FontAwesome";
+    position: absolute;
+    right: 6px;
+    top: 7px;
 }
 
-.filter-border-name-arrow {
-    content: '\25B6';
-    padding-right: 0.5em;
+.details-filter[open]>.filter-border-name::after {
+    content: '\f0d8';
+    color: #ef5b70;
 }
 
-details[open]>.filter-border-name-arrow {
-    content: '\25BC';
+.details-filter {
+    padding-bottom: 18px;
 }
 
 .filter-border {
@@ -870,6 +891,8 @@ details[open]>.filter-border-name-arrow {
     line-height: 20px;
     border-bottom: 1px solid #ececec;
     padding-left: 11px;
+    display: flex;
+    align-items: center;
 }
 
 .product-list {
@@ -884,10 +907,10 @@ details[open]>.filter-border-name-arrow {
     margin: 15px 0 15px 16px;
 }
 
-.product-list:last-child {
+/* .product-list:last-child {
     content: "";
     margin-bottom: 40px;
-}
+} */
 
 .product-menu {
     border-bottom: 3px solid #ef5b70;
@@ -898,8 +921,98 @@ details[open]>.filter-border-name-arrow {
 }
 
 .product-settings {
-    height: 165px;
-    border: 1px solid #222222;
+    /* height: 165px;
+    border: 1px solid #222222; */
+    margin-bottom: 41px;
+}
+
+.product-checkboxes {
+    display: flex;
+}
+
+.checkboxes-head {
+    font-size: 14px;
+    font-weight: 700;
+    color: #6f6e6e;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.checkboxes-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.checkboxes-link {
+    text-decoration: none;
+    font-size: 14px;
+    color: #6f6e6e;
+}
+
+.checkboxes-br {
+    padding: 0 9px;
+    color: #dfdfdf;
+}
+
+.checkboxes-item-1 {
+    width: 176px;
+    margin-right: 114px;
+}
+
+.checkboxes-item-2 {
+    width: 239px;
+    margin-right: 57px;
+}
+
+.checkboxes-item-3 {
+    width: 263px;
+}
+
+.checkboxes-label {
+    font-family: 'OpenSans';
+    font-size: 14px;
+    color: #6f6e6e;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding-right: 23px;
+}
+
+.checkboxes-input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.checkboxes-input+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.checkboxes-input+label::before {
+    content: "";
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-color: #ffffff;
+    border: 1px solid #ebebeb;
+    margin-right: 9px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.checkboxes-input:checked+label::before {
+
+    border-color: #f16d7f;
+    /* content: "\f00c"; */
+    font-family: "FontAwesome";
+    color: #f16d7f;
+    background: #f16d7f;
 }
 
 .cart-box {
@@ -909,6 +1022,10 @@ details[open]>.filter-border-name-arrow {
     color: #ffffff;
     z-index: 1;
     justify-content: center;
+    width: 100%;
+}
+
+.checkboxes-range {
     width: 100%;
 }
 
@@ -960,12 +1077,45 @@ details[open]>.filter-border-name-arrow {
 }
 
 .product-pages {
-    height: 60px;
-    width: 261px;
-    border: 1px solid #000;
+    /* height: 44px; */
+    /* width: 261px; */
     margin-top: 43px;
     margin-bottom: 110px;
+    background-color: #ffffff;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    width: fit-content;
+
 }
+
+
+#arrow {
+    color: #aaaaaa;
+}
+
+#arrow:hover {
+    color: #f16d7f;
+}
+
+.page-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #c4c4c4;
+    line-height: 26px;
+    border: none;
+    font-family: 'FontAwesome';
+    padding: 15px;
+}
+
+.page-link:hover,
+.page-link:focus {
+    background-color: #ffffff;
+    color: #f16d7f;
+    border: none;
+    box-shadow: none;
+}
+
+
 
 /* Single Page */
 
@@ -1179,7 +1329,7 @@ video {
     padding-left: 17px;
     outline: none;
     font-size: 14px;
-    color: #bcbcbc;
+    color: #222222;
     position: relative;
 }
 
