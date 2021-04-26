@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>Internet-shop</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/90691aa70a.js" crossorigin="anonymous"></script>
-        <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
     </head>
     <header class="header">
         <div class="container header-box">
@@ -14,15 +14,119 @@
                      <img src="img/logo.svg" alt="logo">
                      <p class="brand">Bran<span class="brand-d pink">d</span></p>
                  </a>
-                <form action="#" class="header-form">
-                    <button type="submit" class="browse">Browse</button>
-                    <input class="input-text" type="text" placeholder="Search for Item...">
-                    <button type="submit"  class="fa-search"></button>
+                    <details class="details-browse">
+                        <summary type="submit" class="browse">Browse</summary>
+                        <div class="mega-menu mega-menu-browse">
+                            <div class="mega-item">
+                                <p class="mega-head">Women</p>
+                                <ul class="mega-list">
+                                    <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                                    <li><a href="product.html" class="mega-link link">Tops</a></li>
+                                    <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                                    <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
+                                    <li><a href="product.html" class="mega-link link">Blazers</a></li>
+                                    <li><a href="product.html" class="mega-link link">Demin</a></li>
+                                    <li><a href="product.html" class="mega-link link">Leggings/Pants</a></li>
+                                    <li><a href="product.html" class="mega-link link">Skirts/Shorts</a></li>
+                                    <li><a href="product.html" class="mega-link link">Accessories</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-item">
+                                <p class="mega-head">Men</p>
+                                <ul class="mega-list">
+                                    <li><a href="product.html" class="mega-link link">Tees/Tank tops</a></li>
+                                    <li><a href="product.html" class="mega-link link">Shirts/Polos</a></li>
+                                    <li><a href="product.html" class="mega-link link">Sweaters</a></li>
+                                    <li><a href="product.html" class="mega-link link">Sweatshirts/Hoodies</a></li>
+                                    <li><a href="product.html" class="mega-link link">Blazers</a></li>
+                                    <li><a href="product.html" class="mega-link link">Jackets/Vests</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </details>
+                    <form action="#" class="header-form">
+                        <input class="input-text" type="text" placeholder="Search for Item...">
+                    <button type="submit"  class="fa-search"></button>                
                 </form>
             </div>
             <div class="header-right">
                  <a href="#"><img class="cart" src="img/cart.svg" alt="cart"></a>
-                 <a class="button my-account" href="#">My account</a>
+                <details class="details-my-account">
+                    <summary class="button my-account" href="#">My account</summary>
+                    <div class="my-account-menu">
+                       <figure class="my-account-item">
+                           <img src="img/my-acc-1.jpg" alt="photo">
+                           <div class="my-acc-right">
+                                <div class="my-acc-info">
+                                    <h3 class="my-acc-head">Rebox Zane</h3>
+                                        <div class="review_stars stars-height" >
+                                            <input id="star-5" type="radio" name="stars"/>
+                                            <label title="Отлично" for="star-5">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                            <input id="star-4" type="radio" name="stars"/>
+                                            <label title="Хорошо" for="star-4">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                            <input id="star-3" type="radio" name="stars"  />
+                                            <label title="Нормально" for="star-3">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                            <input id="star-2" type="radio" name="stars"/>
+                                            <label title="Плохо" for="star-2">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                            <input id="star-1" type="radio" name="stars"/>
+                                            <label title="Ужасно" for="star-1">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                        </div>
+                                    <div class="my-acc-text">1 <span class="text-x">x</span> $250</div>
+                                </div>
+                                <a class="fas fa-times-circle" href="#"></a>
+                           </div>
+                       </figure>
+                       <hr class="my-acc-hr">
+                       <figure class="my-account-item">
+                        <img src="img/my-acc-2.jpg" alt="photo">
+                        <div class="my-acc-right">
+                             <div class="my-acc-info">
+                                 <h3 class="my-acc-head">Rebox Zane</h3>
+                                     <div class="review_stars stars-height" >
+                                         <input id="star-5" type="radio" name="stars"/>
+                                         <label title="Отлично" for="star-5">
+                                             <i class="fas fa-star"></i>
+                                         </label>
+                                         <input id="star-4" type="radio" name="stars"/>
+                                         <label title="Хорошо" for="star-4">
+                                             <i class="fas fa-star"></i>
+                                         </label>
+                                         <input id="star-3" type="radio" name="stars"  />
+                                         <label title="Нормально" for="star-3">
+                                             <i class="fas fa-star"></i>
+                                         </label>
+                                         <input id="star-2" type="radio" name="stars"/>
+                                         <label title="Плохо" for="star-2">
+                                             <i class="fas fa-star"></i>
+                                         </label>
+                                         <input id="star-1" type="radio" name="stars"/>
+                                         <label title="Ужасно" for="star-1">
+                                             <i class="fas fa-star"></i>
+                                         </label>
+                                     </div>
+                                 <div class="my-acc-text">1 <span class="text-x">x</span> $250</div>
+                             </div>
+                             <a class="fas fa-times-circle" href="#"></a>
+                        </div>
+                    </figure>
+                    <hr class="my-acc-hr">
+                    <div class="cost">
+                        <p>TOTAL</p>
+                        <p>$500.00</p>
+                    </div>
+                    <a href="checkout.html" class="my-acc-button">Checkout</a>
+                    <a href="shopping cart.html" class="my-acc-button">Go to cart</a>  
+                </details>
             </div>
         </div>
      </header>
@@ -337,7 +441,7 @@
         </div>
     </div>
     <div class="flex-box">
-        <div class="slide">
+        <div class="slide container">
             <!-- <video src="https://youtu.be/nKa-6yKqJ9M" controls preload="auto"></video> -->
             <video controls>
                 <source src="video/videoplayback.mp4" type="video/mp4">
@@ -410,7 +514,7 @@
                 </a>
                 <div class="cart-box">
                     <div class="add-to-cart add-product">
-                        <a class="add-to-cart-link  add-link-product link" href="#">
+                        <a class="add-to-cart-link  add-link-product link" href="shopping cart.html">
                         <img class="small-cart"src="img/add-to-cart.svg" alt="add to cart">
                         Add to Cart
                         </a>
@@ -421,25 +525,25 @@
                     </div>
                 </div>
                 <div class="review_stars_wrap">
-                    <div id="review_stars">
-                        <input id="star-5" type="radio" name="stars"/>
-                        <label title="Отлично" for="star-5">
+                    <div class="review_stars">
+                        <input id="star1-5" type="radio" name="stars"/>
+                        <label title="Отлично" for="star1-5">
                             <i class="fas fa-star"></i>
                         </label>
-                        <input id="star-4" type="radio" name="stars"/>
-                        <label title="Хорошо" for="star-4">
+                        <input id="star1-4" type="radio" name="stars"/>
+                        <label title="Хорошо" for="star1-4">
                             <i class="fas fa-star"></i>
                         </label>
-                        <input id="star-3" type="radio" name="stars"  />
-                        <label title="Нормально" for="star-3">
+                        <input id="star1-3" type="radio" name="stars"/>
+                        <label title="Нормально" for="star1-3">
                             <i class="fas fa-star"></i>
                         </label>
-                        <input id="star-2" type="radio" name="stars"/>
-                        <label title="Плохо" for="star-2">
+                        <input id="star1-2" type="radio" name="stars"/>
+                        <label title="Плохо" for="star1-2">
                             <i class="fas fa-star"></i>
                         </label>
-                        <input id="star-1" type="radio" name="stars"/>
-                        <label title="Ужасно" for="star-1">
+                        <input id="star1-1" type="radio" name="stars"/>
+                        <label title="Ужасно" for="star1-1">
                             <i class="fas fa-star"></i>
                         </label>
                     </div>
@@ -453,7 +557,7 @@
                 </a>
                 <div class="cart-box">
                     <div class="add-to-cart add-product">
-                        <a class="add-to-cart-link  add-link-product link" href="#">
+                        <a class="add-to-cart-link  add-link-product link" href="shopping cart.html">
                         <img class="small-cart"src="img/add-to-cart.svg" alt="add to cart">
                         Add to Cart
                         </a>
@@ -464,25 +568,25 @@
                     </div>
                 </div>
                 <div class="review_stars_wrap">
-                    <div id="review_stars">
-                        <input id="star-5" type="radio" name="stars"/>
-                        <label title="Отлично" for="star-5">
+                    <div class="review_stars">
+                        <input id="star2-5" type="radio" name="stars"/>
+                        <label title="Отлично" for="star2-5">
                             <i class="fas fa-star"></i>
                         </label>
-                        <input id="star-4" type="radio" name="stars"/>
-                        <label title="Хорошо" for="star-4">
+                        <input id="star2-4" type="radio" name="stars"/>
+                        <label title="Хорошо" for="star2-4">
                             <i class="fas fa-star"></i>
                         </label>
-                        <input id="star-3" type="radio" name="stars"  />
-                        <label title="Нормально" for="star-3">
+                        <input id="star2-3" type="radio" name="stars"  />
+                        <label title="Нормально" for="star2-3">
                             <i class="fas fa-star"></i>
                         </label>
-                        <input id="star-2" type="radio" name="stars"/>
-                        <label title="Плохо" for="star-2">
+                        <input id="star2-2" type="radio" name="stars"/>
+                        <label title="Плохо" for="star2-2">
                             <i class="fas fa-star"></i>
                         </label>
-                        <input id="star-1" type="radio" name="stars"/>
-                        <label title="Ужасно" for="star-1">
+                        <input id="star2-1" type="radio" name="stars"/>
+                        <label title="Ужасно" for="star2-1">
                             <i class="fas fa-star"></i>
                         </label>
                     </div>
@@ -496,7 +600,7 @@
                 </a>
                 <div class="cart-box">
                     <div class="add-to-cart add-product">
-                        <a class="add-to-cart-link  add-link-product link" href="#">
+                        <a class="add-to-cart-link  add-link-product link" href="shopping cart.html">
                         <img class="small-cart"src="img/add-to-cart.svg" alt="add to cart">
                         Add to Cart
                         </a>
@@ -507,25 +611,25 @@
                     </div>
                 </div>
                 <div class="review_stars_wrap">
-                    <div id="review_stars">
-                        <input id="star-5" type="radio" name="stars"/>
-                        <label title="Отлично" for="star-5">
+                    <div class="review_stars">
+                        <input id="star3-5" type="radio" name="stars"/>
+                        <label title="Отлично" for="star3-5">
                             <i class="fas fa-star"></i>
                         </label>
-                        <input id="star-4" type="radio" name="stars"/>
-                        <label title="Хорошо" for="star-4">
+                        <input id="star3-4" type="radio" name="stars"/>
+                        <label title="Хорошо" for="star3-4">
                             <i class="fas fa-star"></i>
                         </label>
-                        <input id="star-3" type="radio" name="stars"  />
-                        <label title="Нормально" for="star-3">
+                        <input id="star3-3" type="radio" name="stars"  />
+                        <label title="Нормально" for="star3-3">
                             <i class="fas fa-star"></i>
                         </label>
-                        <input id="star-2" type="radio" name="stars"/>
-                        <label title="Плохо" for="star-2">
+                        <input id="star3-2" type="radio" name="stars"/>
+                        <label title="Плохо" for="star3-2">
                             <i class="fas fa-star"></i>
                         </label>
-                        <input id="star-1" type="radio" name="stars"/>
-                        <label title="Ужасно" for="star-1">
+                        <input id="star3-1" type="radio" name="stars"/>
+                        <label title="Ужасно" for="star3-1">
                             <i class="fas fa-star"></i>
                         </label>
                     </div>
@@ -539,7 +643,7 @@
                 </a>
                 <div class="cart-box">
                     <div class="add-to-cart add-product">
-                        <a class="add-to-cart-link  add-link-product link" href="#">
+                        <a class="add-to-cart-link  add-link-product link" href="shopping cart.html">
                         <img class="small-cart"src="img/add-to-cart.svg" alt="add to cart">
                         Add to Cart
                         </a>
@@ -550,36 +654,36 @@
                     </div>
                 </div> 
                 <div class="review_stars_wrap">
-                    <div id="review_stars">
-                        <input id="star-5" type="radio" name="stars"/>
-                        <label title="Отлично" for="star-5">
+                    <div class="review_stars">
+                        <input id="star4-5" type="radio" name="stars"/>
+                        <label title="Отлично" for="star4-5">
                             <i class="fas fa-star"></i>
                         </label>
-                        <input id="star-4" type="radio" name="stars"/>
-                        <label title="Хорошо" for="star-4">
+                        <input id="star4-4" type="radio" name="stars"/>
+                        <label title="Хорошо" for="star4-4">
                             <i class="fas fa-star"></i>
                         </label>
-                        <input id="star-3" type="radio" name="stars"  />
-                        <label title="Нормально" for="star-3">
+                        <input id="star4-3" type="radio" name="stars"  />
+                        <label title="Нормально" for="star4-3">
                             <i class="fas fa-star"></i>
                         </label>
-                        <input id="star-2" type="radio" name="stars"/>
-                        <label title="Плохо" for="star-2">
+                        <input id="star4-2" type="radio" name="stars"/>
+                        <label title="Плохо" for="star4-2">
                             <i class="fas fa-star"></i>
                         </label>
-                        <input id="star-1" type="radio" name="stars"/>
-                        <label title="Ужасно" for="star-1">
+                        <input id="star4-1" type="radio" name="stars"/>
+                        <label title="Ужасно" for="star4-1">
                             <i class="fas fa-star"></i>
                         </label>
                     </div>
                 </div>
             </div>
     </section>
-     <footer class="footer">
+    <footer class="footer">
         <div class="feedback-block">
             <div class="feedback-container container">
                 <figure class="feedback-figure">
-                    <img class="feedback-img" src="img/face.png" alt="#">
+                    <img class="feedback-img" src="img/face.png" alt="feedback">
                     <div class="feedback-all-text">
                         <div class="feedback-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, 
                             a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</div>
@@ -600,7 +704,7 @@
                         </div>                         
                     </div>
                     <form class="subscribe-form" action="#">
-                        <input class="input-subscribe" type="email" placeholder="Enter Your Email">
+                        <input class="input-subscribe" type="email" name="simple" placeholder="Enter Your Email">
                    <button class="subscribe-button button" type="submit">Subscribe</button>
                     </form>
                 </div>
@@ -623,11 +727,11 @@
                 </article>
             </section>
             <div class="footer-text-right">
-                <div class="map">
+                <div>
                     <div class="map-head pink">Company</div>
                         <ul class="map-list">
                         <li> <a  class="map-link link" href="index.html">Home</a></li>
-                        <li><a class="map-link link" href="#">Shop</a></li>
+                        <li><a class="map-link link" href="product.html">Shop</a></li>
                         <li><a class="map-link link" href="#">About</a></li>
                         <li><a class="map-link link" href="#">How It Works</a></li>
                         <li><a class="map-link link" href="#">Contact</a></li>
@@ -650,7 +754,7 @@
                         <li><a class="map-link link" href="product.html">Women</a></li>
                         <li><a class="map-link link" href="product.html">Child</a></li>
                         <li><a class="map-link link" href="#">Apparel</a></li>
-                        <li><a class="map-link link" href="#">Brows All</a></li>
+                        <li><a class="map-link link" href="product.html">Brows All</a></li>
                         </ul>
                 </div>
             </div>
@@ -682,7 +786,7 @@
                 </div>
             </div>
         
-    </footer>    
+    </footer>   
     </div>
 </body>
 </html>

@@ -1,0 +1,1537 @@
+*
+    margin: 0
+    padding: 0
+
+$bd: 1px
+$pink: #f16d7f
+
+p,
+ul
+    margin: 0
+    padding: 0
+
+a
+    color: #222222
+
+a:hover
+    color: #222222
+
+body
+    font-family: 'Lato', sans-serif
+
+.header
+    height: 100px
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.17)
+    border: $bd solid #ececec
+    background-color: #ffffff
+
+.container
+    max-width: 1140px
+    margin: 0 auto
+
+.header-box
+    display: flex
+    justify-content: space-between
+    height: 100%
+
+.logo
+    text-decoration: none
+    display: flex
+
+.brand
+    font-size: 27px
+    color: #3E3E40
+    align-self: center
+    margin-left: 13px
+    line-height: 32px
+    font-weight: 300
+    text-transform: uppercase
+    letter-spacing: 0.025em
+
+.brand-d
+    font-weight: 900
+
+.header-form
+    display: flex
+
+.details-browse
+    margin-left: 46px
+    position: relative
+    cursor: pointer
+
+.browse
+    font-size: 14px
+    /* line-height: 32px */
+    font-weight: 500
+    letter-spacing: 0.025em
+    color: #222222
+    /* background-color: #cdcdcc */
+    border: $bd solid #e6e6e6
+    border-radius: 3px 0px 0px 3px
+    padding: 9px 26px 9px 15px
+    background-image: linear-gradient(180.0deg, #f9f9f9 0%, #f5f5f5 100%)
+    outline: none
+    display: flex
+    position: relative
+
+.browse:hover
+    color: #ffffff
+    background-image: linear-gradient(180.0deg, $pink 0%, #e76d7f 100%)
+
+.browse:active,
+.details-browse[open]>.browse
+    color: rgba(178, 178, 178, 0.3)
+    background-image: linear-gradient(180.0deg, #ffffff 100%, #ffffff 100%)
+
+.browse::after
+    content: '\f0d7'
+    color: #838383
+    font-family: "FontAwesome"
+    position: absolute
+    right: 9px
+
+.details-browse:hover .browse::after
+    color: #ffffff
+
+.details-browse[open]>.browse::after
+    content: '\f0d8'
+    color: rgba(178, 178, 178, 0.3)
+
+.details-browse[open]>.mega-menu
+    display: flex
+
+.mega-menu-browse
+    top: 45px
+    flex-direction: column
+
+.mega-menu-browse::before
+    top: -6px
+    left: 70px
+
+.mega-menu-position::before
+    content: ''
+    left: 70px
+
+.input-text
+    outline: none
+    padding-left: 16px
+    background-color: #ffffff
+    border: $bd solid #e6e6e6
+    border-radius: 0px 3px 3px 0px
+    width: 180px
+
+.fa-search
+    font-family: 'FontAwesome'
+    font-size: 14px
+    color: #a4a4a4
+    text-align: right
+    letter-spacing: 0.03em
+    padding: 9px 12px
+    background-color: #ffffff
+    border: $bd solid #e6e6e6
+    border-radius: 0px 3px 3px 0px
+    outline: none
+    cursor: pointer
+
+.fa-search:hover
+    background-color: $pink
+    color: #ffffff
+
+.fa-search:active
+    color: rgba(178, 178, 178, 0.3)
+    background: rgba(255, 255, 255, 0.3)
+
+.header-left,
+.header-right
+    display: flex
+    align-items: center
+
+.cart
+    margin-right: 18px
+
+.button
+    background-color: $pink
+    text-decoration: none
+    border: $bd solid transparent
+    color: #ffffff
+    font-weight: 400
+
+.button:hover
+    background-color: #ffffff
+    color: $pink
+    border: $bd solid $pink
+
+.details-my-account
+    position: relative
+    cursor: pointer
+
+.details-my-account::-webkit-details-marker
+    display: none
+
+.my-account-menu
+    padding: 20px 16px
+    position: absolute
+    background-color: #fff
+    display: none
+    z-index: 1
+    left: -50%
+    border: $bd solid #e8e8e8
+    border-radius: 5px
+    top: 55px
+
+.my-account-menu::before
+    content: ""
+    height: 12px
+    width: 12px
+    background: #ffffff
+    display: block
+    position: absolute
+    transform: rotate(45deg)
+    border-top: $bd solid #e8e8e8
+    border-left: $bd solid #e8e8e8
+    top: -7px
+    right: 83px
+
+.details-my-account[open]>.my-account-menu
+    display: block
+
+.my-account
+    font-size: 15px
+    padding: 8px 29px 8px 19px
+    outline: none
+
+.my-account
+    display: block
+
+.my-account::after
+    content: '\f0d7'
+    color: #ffffff
+    font-family: "FontAwesome"
+    position: absolute
+    right: 12px
+
+.my-account:hover::after
+    color: $pink
+
+.details-my-account[open]>.my-account::after
+    content: '\f0d8'
+
+.my-account-item
+    width: 230px
+    display: flex
+    justify-content: space-between
+
+.my-acc-right
+    display: flex
+    width: 143px
+    justify-content: space-between
+    align-items: center
+
+.my-acc-head
+    font-size: 12px
+    font-weight: 700
+    color: #222222
+    text-transform: uppercase
+
+.my-acc-text
+    font-size: 12px
+    color: $pink
+    text-transform: uppercase
+    font-weight: 700
+    margin-top: 34px
+    box-sizing: border-box
+
+.text-x
+    font-size: 10px
+
+.fa-times-circle
+    font-family: "FontAwesome"
+    font-size: 16px
+    color: #c0c0c0
+    text-decoration: none
+
+.fa-times-circle:hover
+    color: $pink
+
+.fa-times-circle:active
+    color: rgba(178, 178, 178, 0.3)
+
+.my-acc-hr
+    margin: 10px 0
+    width: 100%
+    color: #ededed
+
+.cost
+    display: flex
+    justify-content: space-between
+    margin-bottom: 32px
+
+.cost p
+    font-size: 16px
+    font-weight: 700
+    color: #222222
+    text-transform: uppercase
+
+.my-acc-button
+    font-size: 14px
+    font-weight: 700
+    color: #4a4a4a
+    text-transform: uppercase
+    display: block
+    padding: 19px
+    text-decoration: none
+    border: $bd solid #eaeaea
+    text-align: center
+    margin-top: 11px
+
+.my-acc-button:hover
+    border: $bd solid $pink
+    color: $pink
+
+.menu
+    display: flex
+    list-style-type: none
+    justify-content: center
+    position: relative
+
+.menu-link
+    text-decoration: none
+    display: block
+    padding: 20px 25px
+    font-size: 14px
+    line-height: 26px
+    font-weight: 1000
+    text-transform: uppercase
+    color: #222222
+
+.menu-list
+    position: relative
+
+.menu-list:hover .mega-menu
+    display: flex
+
+.mega-menu
+    padding: 20px 25px
+    position: absolute
+    background-color: #fff
+    display: none
+    border: $bd solid #e8e8e8
+    border-radius: 5px
+    z-index: 1
+
+.mega-menu-position
+    top: 55px
+
+.mega-menu::before
+    content: ""
+    height: 12px
+    width: 12px
+    background: #ffffff
+    display: block
+    position: absolute
+    transform: rotate(45deg)
+    border-top: $bd solid #e8e8e8
+    border-left: $bd solid #e8e8e8
+
+.mega-menu-position::before
+    content: ""
+    top: -6px
+    left: 35px
+
+.mega-reverse
+    right: 0
+
+.mega-reverse::before
+    left: 602px
+
+/* уменьшила отступы, т.к. через wrap itemы просто распологаются в столбик */
+.mega-item
+    padding-right: 40px
+
+.mega-item:last-of-type
+    padding-right: 0
+
+/* уменьшила ширину, т.к. через wrap itemы просто распологаются в столбик */
+.mega-head
+    width: 180px
+    border-bottom: $bd solid #e8e8e8
+    font-size: 14px
+    font-weight: 600
+    text-transform: uppercase
+    padding: 8px 0
+    margin: 8px 0
+
+.mega-list
+    list-style-type: none
+
+.mega-link
+    text-decoration: none
+    font-size: 14px
+    line-height: 28px
+    font-weight: 400
+    letter-spacing: 0.025em
+    color: #646464
+    display: block
+
+.link:hover
+    color: $pink
+
+.banner-top
+    height: 613px
+    background-color: #e8e8e8
+
+.banner-top-box
+    height: 100%
+    background: url(img/banner-top.png) 0 -150px
+    background-repeat: no-repeat
+    display: flex
+    align-items: center
+
+.banner-top-text
+    border-left: 13px solid $pink
+    padding-left: 16px
+    text-transform: uppercase
+    font-weight: 1000
+
+.the-brand
+    font-size: 60px
+    line-height: 1.2
+    font-weight: 900
+    letter-spacing: 0.025em
+    color: #222222
+
+.luxerious
+    font-size: 40px
+    line-height: 1.2
+    font-weight: 900
+    letter-spacing: 0.025em
+    color: #222222
+
+.pink
+    color: $pink
+
+.hot-deals-box
+    margin-top: 96px
+    display: flex
+
+.hot-deals-img
+    width: 561px
+    display: block
+
+.hot-deals-left,
+.hot-deals-right
+    display: flex
+    flex-direction: column
+
+.hot-deals-left
+    margin-right: 18px
+
+.for-men
+    height: 543px
+    position: relative
+    flex-grow: 1
+    background: url(img/for-men.jpeg) -10px 0
+    margin-bottom: 18px
+
+.accesories
+    height: 262px
+    background: url(img/accesories.jpeg) right -40px
+    background-color: #DADAD2
+    background-repeat: no-repeat
+
+.for-women
+    height: 262px
+    position: relative
+    background: url(img/for-women.jpeg) 0 -100px
+    margin-bottom: 18px
+
+.for-kids
+    height: 543px
+    position: relative
+    background: url(img/for-kids.jpeg)
+
+.hot-deals-text
+    position: absolute
+    padding: 16px 20px
+    background-color: #ffffff
+    margin-top: 26px
+    line-height: 1.2
+    font-weight: 900
+    text-transform: uppercase
+    letter-spacing: 0.025em
+
+.hot-deals-text-black
+    font-size: 18px
+    color: #222222
+
+.hot-deals-text-pink
+    font-size: 30px
+    color: $pink
+
+.text-box
+    margin-top: 100px
+    text-align: center
+    font-size: 30px
+    font-weight: 700
+    letter-spacing: 0.025em
+    color: #222222
+
+.shop-for
+    font-size: 14px
+    color: #9f9f9f
+    margin-top: 16px
+
+.product-box
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+.item
+    position: relative
+    width: 263px
+    margin-top: 60px
+    &_mt38
+        margin-top: 38px
+    &_mt48
+        margin-top: 48px
+
+.product-card
+    display: block
+    text-decoration: none
+
+.item:hover
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
+
+.product-img
+    width: 100%
+    height: 280px
+
+.item:hover .product-img
+    filter: brightness(50%)
+
+.add-to-cart
+    position: absolute
+    top: 27%
+    display: none
+    justify-content: center
+    width: 100%
+
+.small-cart
+    margin-right: 8px
+
+.add-to-cart-link
+    border: $bd solid #ffffff
+    padding: 8px 12px
+    color: #ffffff
+    font-size: 13px
+    font-weight: 700
+    text-decoration: none
+    display: flex
+    align-items: center
+
+.item:hover .add-to-cart
+    display: flex
+
+.product-text
+    margin: 18px 10px
+    color: #222222
+    text-transform: uppercase
+    font-size: 14px
+    font-weight: 1000
+
+.product-price
+    font-size: 16px
+    color: $pink
+    text-transform: uppercase
+    font-weight: 1000
+    margin-left: 10px
+    padding-bottom: 24px
+
+.browse-all-position
+    width: fit-content
+    margin: 78px auto 112px
+    display: block
+
+.browse-all
+    padding: 18px 43px 18px 24px
+    font-size: 16px
+    display: inline-block
+    position: relative
+    letter-spacing: 0.03em
+    &::after
+        content: '\f30b'
+        font-family: 'FontAwesome'
+        position: absolute
+        right: 19px
+        top: 20px
+        height: 20px
+
+.banner-bottom
+    height: 530px
+    background-color: #222224
+    margin-bottom: 97px
+
+.banner-bottom-link
+    text-decoration: none
+    display: flex
+
+.banner-bottom-left
+    height: 530px
+    width: 768px
+    background: url(img/banner-bottom.jpeg)
+    background-repeat: no-repeat
+    background-color: #222224
+
+.banner-bottom:hover .banner-bottom-left
+    height: 530px
+    background: url(img/banner-bottom-hover.jpeg)
+    background-repeat: no-repeat
+
+.banner-bottom-left-text
+    color: #ffffff
+    text-transform: uppercase
+    font-weight: 700
+    padding-left: 40px
+    padding-top: 147px
+
+.percent
+    font-size: 60px
+
+.banner-women
+    font-size: 30px
+
+.banner-bottom-right
+    padding: 48px 43px 60px
+    justify-self: flex-end
+    width: 373px
+    box-sizing: border-box
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.advantages-index
+    width: 295px
+    height: 104px
+    display: flex
+    color: #fbfbfb
+    align-items: flex-start
+
+.advantages-block
+    margin-left: 30px
+
+.advantages-head
+    font-size: 20px
+    margin-bottom: 10px
+    font-weight: 700
+
+.advantages-article
+    text-align: justify
+    font-size: 14px
+    font-weight: 300
+    letter-spacing: 0.025em
+
+.feedback-block
+    margin-bottom: 109px
+    background-image: url(img/serfer-bckgrnd.png), url(img/serfer.jpg)
+    height: 440px
+    background-size: cover
+
+.feedback-container
+    display: flex
+
+.feedback-img
+    height: 83px
+    width: 83px
+    margin-right: 28px
+
+.feedback-figure
+    margin-top: 111px
+    display: flex
+
+.feedback-text
+    font-size: 16px
+    line-height: 26px
+    font-weight: 400
+    font-style: italic
+    letter-spacing: 0.025em
+    color: #222224
+    width: 385px
+
+.feedback-name
+    margin-top: 19px
+    font-size: 16px
+    line-height: 26px
+    font-weight: 700
+    letter-spacing: 0.025em
+    color: $pink
+
+.feedback-place
+    font-size: 12px
+    line-height: 14px
+    font-weight: 300
+    color: #222224
+
+.slide-box
+    display: flex
+    flex-direction: space-between
+
+.slide-part
+    background: #d6d6d6
+    height: 4px
+    width: 38px
+    margin-right: 13px
+    margin-top: 41px
+
+.slide-part:active
+    background: $pink
+
+.br
+    background: url(img/br.png)
+    height: 440px
+    width: $bd
+    margin-left: 72px
+    margin-right: 92px
+
+.subscribe
+    width: 386px
+    margin-top: 148px
+
+.subscribe-text
+    text-align: center
+
+.subscribe-head
+    font-size: 24px
+    font-weight: 400
+    text-transform: uppercase
+    letter-spacing: 0.025em
+    color: #222224
+
+.subscribe-article
+    font-size: 14px
+    line-height: 24px
+    font-weight: 400
+    text-transform: uppercase
+    letter-spacing: 0.025em
+    margin-bottom: 35px
+
+.subscribe-form
+    position: relative
+
+.input-subscribe
+    outline: none
+    height: 46px
+    background-color: #e1e1e1
+    border-radius: 23px
+    opacity: 0.67
+    font-size: 14px
+    line-height: 54px
+    font-weight: 400
+    letter-spacing: 0.025em
+    color: #000000
+    padding-left: 28px
+    padding-right: 148px
+    border: none
+
+.subscribe-button
+    padding: 11.5px 20px
+    border-radius: 0px 23px 23px 0px
+    outline: none
+    font-size: 14px
+    letter-spacing: 0.025em
+    position: absolute
+    right: 10px
+
+.footer-text
+    display: flex
+
+.footer-text-left
+    width: 430px
+    margin-right: 64px
+
+.footer-text-left-article
+    color: #898989
+    font-size: 14px
+    line-height: 24px
+    font-weight: 300
+    letter-spacing: 0.025em
+    height: 180px
+    overflow: hidden
+    margin-top: 29px
+
+.indent
+    margin-top: 15px
+
+.footer-text-right
+    flex-grow: 1
+    display: flex
+    justify-content: space-between
+
+.map-head
+    font-size: 18px
+    text-transform: uppercase
+    margin-bottom: 45px
+    line-height: 26px
+    font-weight: 700
+    letter-spacing: 0.025em
+
+.map-list
+    list-style-type: none
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 180px
+
+.map-link
+    text-decoration: none
+    color: #898989
+    font-size: 16px
+    font-weight: 400
+    letter-spacing: 0.025em
+    display: block
+
+.footer-bottom
+    height: 80px
+    background: #e6e6e6
+    margin-top: 88px
+
+.flex
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 100%
+
+.footer-bottom-copy
+    font-size: 16px
+    color: #7a7a7a
+    font-weight: 700
+
+.footer-bottom-social
+    text-align: center
+
+.footer-bottom-social ul
+    list-style: none
+    display: flex
+
+.social
+    text-decoration: none
+    font-family: "FontAwesome"
+    font-size: 16px
+    line-height: 42px
+    font-weight: 400
+    letter-spacing: 0.025em
+    color: #b2b2b2
+    width: 300px
+    align-self: center
+
+.icon
+    width: 32px
+    height: 32px
+    background-color: #ffffff
+    display: flex
+    margin-left: 8px
+
+.icon:hover
+    background-color: $pink
+
+.icon:hover .social
+    color: #f7f7f8
+
+.icon:active
+    background: rgba(255, 255, 255, 0.3)
+
+.icon:active .social
+    color: rgba(178, 178, 178, 0.1)
+
+/* Product page */
+
+.arrivals
+    background: #f8f3f4
+
+.arrivals-box
+    display: flex
+    height: 148px
+    justify-content: space-between
+    align-items: center
+
+.arrivals-text
+    /* width: 176pxпочему в макете стоит эта ширина, но при этом второе слово занимает 2 строки, а в макете 1? */
+    font-size: 24px
+    font-weight: 900
+    color: $pink
+    text-transform: uppercase
+
+.arrivals-crumbs
+    font-size: 14px
+    font-weight: 700
+    color: #636363
+    text-transform: uppercase
+    text-decoration: none
+
+.arrivals-crumbs:hover
+    color: #f16d7f
+
+.advantages-box
+    height: 341px
+    background: #222224
+    box-sizing: border-box
+
+.advantages-container
+    display: flex
+    justify-content: space-between
+    padding-top: 89px
+
+.advantages-product
+    width: 308px
+    text-align: center
+
+.advantages-img
+    margin-bottom: 29px
+
+.advantages-product-text
+    color: #ffffff
+
+.product
+    display: flex
+    margin-top: 59px
+
+.filter
+    margin-right: 50px
+
+.filter-border-name
+    display: flex
+    outline: none
+    position: relative
+
+.filter-border-name::after
+    content: '\f0d7'
+    color: #6f6e6e
+    font-family: "FontAwesome"
+    position: absolute
+    right: 6px
+    top: 7px
+
+.filter-border-name:hover .filter-name,
+.details-filter:hover .filter-border-name::after
+    color: #ef5b70
+
+.details-filter[open]>.filter-border-name::after
+    content: '\f0d8'
+    color: #ef5b70
+
+.details-filter[open] .filter-name
+    color: #ef5b70
+
+.details-filter
+    padding-bottom: 18px
+
+.filter-border
+    border-left: 5px solid #ef5b70
+    height: 37px
+
+.filter-name
+    height: 37px
+    width: 240px
+    text-transform: uppercase
+    font-size: 14px
+    font-weight: 700
+    color: #6f6e6e
+    line-height: 20px
+    border-bottom: $bd solid #ececec
+    padding-left: 11px
+    display: flex
+    align-items: center
+
+.product-list
+    list-style-type: none
+
+.product-link
+    font-size: 14px
+    color: #6f6e6e
+    display: block
+    text-decoration: none
+    margin: 15px 0 15px 16px
+
+/* .product-list:last-child 
+ content: ""
+ margin-bottom: 40px
+ */
+
+.product-menu
+    border-bottom: 3px solid #ef5b70
+
+.product-right
+    width: 100%
+
+.product-settings
+    /* height: 165px*/
+    // border: $bd solid #222222 
+
+.product-checkboxes
+    display: flex
+    margin-bottom: 41px
+
+.checkboxes-head
+    font-size: 14px
+    font-weight: 700
+    color: #6f6e6e
+    line-height: 20px
+    text-transform: uppercase
+    margin-bottom: 25px
+
+.checkboxes-list
+    display: flex
+    flex-wrap: wrap
+    list-style-type: none
+
+.checkboxes-link
+    text-decoration: none
+    font-size: 14px
+    color: #6f6e6e
+
+.checkboxes-br
+    padding: 0 9px
+    color: #dfdfdf
+
+.checkboxes-item-1
+    width: 176px
+    margin-right: 114px
+
+.checkboxes-item-2
+    width: 239px
+    margin-right: 57px
+
+.checkboxes-item-3
+    width: 263px
+
+.checkboxes-label
+    font-family: 'OpenSans'
+    font-size: 14px
+    color: #6f6e6e
+    line-height: 20px
+    text-transform: uppercase
+    padding-right: 23px
+
+.checkboxes-input
+    position: absolute
+    z-index: -1
+    opacity: 0
+
+.checkboxes-input+label
+    display: inline-flex
+    align-items: center
+    user-select: none
+
+.checkboxes-input+label::before
+    content: ""
+    display: inline-block
+    width: 11px
+    height: 11px
+    flex-shrink: 0
+    flex-grow: 0
+    background-color: #ffffff
+    border: $bd solid #ebebeb
+    margin-right: 9px
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: 50% 50%
+
+.checkboxes-input:checked+label::before
+
+    border-color: $pink
+    content: "\f00c"
+    font-family: "FontAwesome"
+    color: $pink
+    /* background: $pink */
+
+.sort-by-box
+    background-color: #f3f3f3
+    padding: 10px
+    display: flex
+
+.sort-by
+    display: flex
+    background-color: #ffffff
+    font-size: 14px
+    color: #6f6e6e
+    line-height: 26px
+    &_ml10
+        margin-left: 10px
+
+.sort-by-left
+    padding: 10px
+    line-height: 12px
+
+.sort-by-select
+    background-color: #ffffff
+    font-size: 14px
+    color: #6f6e6e
+    outline: none
+    border: none
+    padding: 0 9px
+    line-height: 12px
+
+// .sort-by-details[open]>.sort-by-select::after
+//     content: '\f0d8'
+
+// .sort-by-summary
+//     display: block
+//     position: relative
+//     padding-right: 35px
+
+// .sort-by-summary::after
+//     content: '\f0d7'
+//     font-family: "FontAwesome"
+//     color: #6f6e6e
+//     position: absolute
+//     right: 0px
+
+// .sort-by-details[open]>.sort-by-summary::after
+//     content: '\f0d8'
+
+.sort-by-hr
+    border: 1px solid #ebebeb
+    width: $bd
+.cart-box
+    display: none
+    position: absolute
+    top: 27%
+    color: #ffffff
+    z-index: 1
+    justify-content: center
+    width: 100%
+
+.checkboxes-range
+    width: 100%
+
+.checkboxes-price
+    display: flex
+    justify-content: space-between
+    padding-right: 0px
+
+.cart-product-link
+    display: none
+
+.add-product
+    position: unset
+    margin-bottom: 8px
+
+.add-link-product
+    border-radius: 3px
+
+.under-cart
+    display: flex
+    justify-content: center
+
+.small-cart-product
+    margin-right: 8px
+
+.share
+    margin-right: 9px
+
+.share,
+.like
+    border-radius: 3px
+    padding: 11px 20px
+    text-decoration: none
+    font-family: "FontAwesome"
+    font-size: 16px
+    font-weight: 700
+    border: $bd solid #ffffff
+    display: block
+    color: #ffffff
+
+.item:hover .cart-box
+    display: block
+
+.product-card:hover .cart-product-link
+    display: block
+
+.pagination, .view-all
+    /* height: 44px */
+    /* width: 261px */
+    margin-top: 43px
+    margin-bottom: 110px
+    background-color: #ffffff
+    border: $bd solid #ebebeb
+    border-radius: 3px
+    font-size: 16px
+    font-weight: 500
+    color: #c4c4c4
+    line-height: 13px
+    font-family: 'FontAwesome'
+    padding: 15px
+
+.view-all
+    padding-left: 46px
+    padding-right: 46px
+
+.product-pages
+    display: flex
+    justify-content: space-between
+    width: 100%
+
+#arrow:hover
+    color: $pink
+
+.page-link
+    // font-size: 16px
+    // font-weight: 500
+    color: #aaaaaa
+    // line-height: 26px
+    border: none
+    // font-family: 'FontAwesome'
+    // padding: 15px
+
+.page-link:hover,
+.page-link:focus
+    background-color: #ffffff
+    color: $pink
+    border: none
+    box-shadow: none
+
+/* Single Page */
+
+.flex-box
+    display: flex
+    justify-content: center
+
+.space-between
+    justify-content: space-between
+
+.slide
+    height: 777px
+    width: 100%
+    background: #f7f7f7
+    border: $bd solid #eaeaea
+    position: relative
+
+video
+    width: 100%
+
+.collection-box
+    position: absolute
+    width: 1138px
+    margin: 0 auto
+    border: $bd solid #eaeaea
+    top: 990px
+    z-index: 1
+    background: white
+
+.also
+    margin-top: 763px
+
+.also-text
+    font-size: 24px
+    font-weight: 900
+    color: #4d4d4d
+    text-align: center
+    line-height: 20px
+    text-transform: uppercase
+
+.also-product
+    margin-top: 72px
+
+.single-margin
+    margin-bottom: 73px
+
+.review_stars_wrap
+    overflow: hidden
+    position: absolute
+    bottom: 24px
+    right: 12px
+    display: none
+
+.item:hover .review_stars_wrap
+    display: inline
+
+.review_stars
+    // /* overflow: hidden
+    // position: relative
+    // float: left */
+
+.review_stars input
+    opacity: 0
+    position: absolute
+    z-index: 0
+
+.review_stars input~label i
+    color: #e9e9e9
+
+.review_stars input:checked~label i
+    color: #e4af48
+
+.review_stars label
+    float: right
+    cursor: pointer
+    position: relative
+    z-index: 1
+
+.review_stars label:hover i,
+.review_stars label:hover~label i
+    color: #ec9801
+
+.single-text
+    color: #6f6e6e
+    line-height: 1.2
+    font-weight: 400
+    text-transform: uppercase
+    color: #6f6e6e
+
+.women-collection
+    font-size: 14px
+    font-weight: 700
+    color: $pink
+    text-transform: uppercase
+    width: fit-content
+    margin: 73px auto 18px
+
+.women-border
+    display: flex
+    align-items: center
+    margin-top: 15px
+
+.grey-part
+    height: $bd
+    background: #eaeaea
+    flex-grow: 1
+
+.pink-part
+    height: 3px
+    background-color: #ef5b70
+    flex-grow: 1.5
+
+.collection-head
+    font-size: 18px
+    line-height: 24px
+    font-weight: 900
+    text-transform: uppercase
+    color: #4d4d4d
+    margin: 0 auto
+    width: fit-content
+
+.collection-article
+    width: 620px
+    font-size: 14px
+    line-height: 24px
+    font-weight: 300
+    color: #5e5e5e
+    margin: 67px auto 28px
+
+.collection-thin
+    font-size: 14px
+    line-height: 24px
+    font-weight: 700
+    color: #b9b9b9
+    text-transform: uppercase
+    margin: 0 auto 37px
+    width: fit-content
+
+.collection-thick
+    color: #2f2f2f
+    margin-right: 44px
+
+.collection-price
+    font-size: 24px
+    line-height: 24px
+    font-weight: 700
+    color: #ef5b70
+    margin: 0 auto
+    width: fit-content
+
+.collection-border
+    height: $bd
+    width: 60%
+    background-color: #eaeaea
+    margin: 43px auto 63px
+
+.collection-search
+    width: 537px
+    margin: 0 auto
+
+.collection-search-head
+    font-size: 14px
+    font-weight: 700
+    color: #2f2f2f
+    text-transform: uppercase
+    line-height: 24px
+
+.collection-search-form
+    margin-top: 16px
+    height: 35px
+    width: 125px
+    border: $bd solid #eaeaea
+    padding-left: 17px
+    outline: none
+    font-size: 14px
+    color: #222222
+    position: relative
+
+.colors-width
+    width: 144px
+
+option
+    height: 100px
+    padding: 100px
+    margin: 100px
+
+.collection-search-form::placeholder
+    font-size: 14px
+    color: #bcbcbc
+    font-weight: 400
+
+.collection-add
+    width: 100%
+    padding: 15px 0
+    display: flex
+    justify-content: center
+    margin-top: 28px
+    margin-bottom: 122px
+    outline: none
+
+.collection-add-box
+    align-items: center
+    display: flex
+
+.cart-pink
+    display: none
+    margin-right: 15px
+
+.cart-white
+    margin-right: 15px
+
+.collection-add:hover .cart-white
+    display: none
+
+.collection-add:hover .cart-pink
+    display: block
+
+.product-img-single
+    background: center no-repeat #e9e9e9
+    width: 263px
+    height: 280px
+
+.item:hover .product-img-single
+    filter: brightness(50%)
+
+#single-img-1
+    background-image: url(img/single1.png)
+
+#single-img-2
+    background-image: url(img/single2.png)
+
+#single-img-3
+    background-image: url(img/single3.png)
+
+#single-img-4
+    background-image: url(img/single4.png)
+    filter: brightness(94%)
+    background-color: #f7f7f7
+
+.item:hover #single-img-4
+    filter: brightness(50%)
+
+//Checkout
+
+.accordion:hover
+    background: $pink
+    .accordion-head
+        color: #ffffff
+
+.accordion-head,
+.accordion[open]>.accordion-head
+    font-size: 16px
+    font-weight: 700
+    color: #222222
+    text-transform: uppercase
+    padding: 34px 0
+    display: block
+    outline: none
+
+.accordion[open]
+    background: #ffffff
+
+.space
+    margin-left: 10px
+
+.accordion-flex
+    display: flex
+    align-items: center
+
+.accordion-left
+    margin-left: 35px
+    width: 50%
+    margin-bottom: 98px
+
+.accordion-title,
+    font-size: 13px
+    color: #222222
+    text-transform: uppercase
+    margin-bottom: 17px
+    font-weight: 400
+    margin-top: 5px
+
+.accordion-text
+    font-size: 13px
+    color: #b3b2b2
+    line-height: 20px
+    margin-bottom: 33px
+    font-family: "FontAwesome"
+
+.accordion-hr
+    background: #e8e8e8
+
+    &:last-of-type
+        margin-bottom: 95px
+
+.radio-label
+    font-size: 12px
+    line-height: 1.2
+    color: #222222
+    text-transform: uppercase
+
+#choice1, #choice2
+    margin-right: 14px
+
+.mt
+    margin-top: 33px
+
+.mb
+    margin-bottom: 15px
+
+.mb
+    margin-bottom: 5px
+
+.continue
+    padding: 19px 53px
+    width: 180px
+    font-size: 14px
+    font-weight: 700
+    color: #4a4a4a
+    text-transform: uppercase
+    border: $bd solid #eaeaea
+    background: #ffffff
+    margin-top: 32px
+
+.continue:hover, .view-all:hover
+    border: $bd solid $pink
+    color: $pink
+
+.accordion-right
+    margin-bottom: 98px
+
+.accordion-input
+    height: 45px
+    width: 100%
+    border: 1px solid #eaeaea
+    margin-top: 18px
+    margin-bottom: 25px
+    width: 390px
+    display: block
+
+.mb27
+    margin-bottom: 27px
+
+.red
+    font-size: 17px
+    color: #ff0d0d
+    line-height: 20px
