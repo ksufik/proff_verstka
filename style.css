@@ -1545,10 +1545,6 @@ body {
   width: 100%;
 }
 
-#arrow:hover {
-  color: #f16d7f;
-}
-
 .page-link {
   color: #aaaaaa;
   border: none;
@@ -2049,6 +2045,8 @@ option {
   margin-bottom: 25px;
   width: 390px;
   display: block;
+  outline: none;
+  padding: 10px;
 }
 
 .mb27 {

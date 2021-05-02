@@ -15,7 +15,7 @@
                      <p class="brand">Bran<span class="brand-d pink">d</span></p>
                  </a>
                     <details class="details-browse">
-                        <summary type="submit" class="browse">Browse</summary>
+                        <summary class="browse">Browse</summary>
                         <div class="mega-menu mega-menu-browse">
                             <div class="mega-item">
                                 <p class="mega-head">Women</p>
@@ -50,9 +50,9 @@
                 </form>
             </div>
             <div class="header-right">
-                 <a href="shopping cart.html"><img class="cart" src="img/cart.svg" alt="cart"></a>
+                 <a href="shopping-cart.html"><img class="cart" src="img/cart.svg" alt="cart"></a>
                 <details class="details-my-account">
-                    <summary class="button my-account" href="#">My account</summary>
+                    <summary class="button my-account">My account</summary>
                     <div class="my-account-menu">
                        <figure class="my-account-item">
                            <img src="img/my-acc-1.jpg" alt="photo">
@@ -93,24 +93,24 @@
                              <div class="my-acc-info">
                                  <h3 class="my-acc-head">Rebox Zane</h3>
                                      <div class="review_stars stars-height" >
-                                         <input id="star-5" type="radio" name="stars"/>
-                                         <label title="Отлично" for="star-5">
+                                         <input id="star2-5" type="radio" name="stars"/>
+                                         <label title="Отлично" for="star2-5">
                                              <i class="fas fa-star"></i>
                                          </label>
-                                         <input id="star-4" type="radio" name="stars"/>
-                                         <label title="Хорошо" for="star-4">
+                                         <input id="star2-4" type="radio" name="stars"/>
+                                         <label title="Хорошо" for="star2-4">
                                              <i class="fas fa-star"></i>
                                          </label>
-                                         <input id="star-3" type="radio" name="stars"  />
-                                         <label title="Нормально" for="star-3">
+                                         <input id="star2-3" type="radio" name="stars"  />
+                                         <label title="Нормально" for="star2-3">
                                              <i class="fas fa-star"></i>
                                          </label>
-                                         <input id="star-2" type="radio" name="stars"/>
-                                         <label title="Плохо" for="star-2">
+                                         <input id="star2-2" type="radio" name="stars"/>
+                                         <label title="Плохо" for="star2-2">
                                              <i class="fas fa-star"></i>
                                          </label>
-                                         <input id="star-1" type="radio" name="stars"/>
-                                         <label title="Ужасно" for="star-1">
+                                         <input id="star2-1" type="radio" name="stars"/>
+                                         <label title="Ужасно" for="star2-1">
                                              <i class="fas fa-star"></i>
                                          </label>
                                      </div>
@@ -119,13 +119,14 @@
                              <a class="fas fa-times-circle" href="#"></a>
                         </div>
                     </figure>
+                    </div>
                     <hr class="my-acc-hr">
                     <div class="cost">
                         <p>TOTAL</p>
                         <p>$500.00</p>
                     </div>
                     <a href="checkout.html" class="my-acc-button">Checkout</a>
-                    <a href="shopping cart.html" class="my-acc-button">Go to cart</a>  
+                    <a href="shopping-cart.html" class="my-acc-button">Go to cart</a>  
                 </details>
             </div>
         </div>
@@ -449,7 +450,7 @@
                 <div class="accordion-title">Check as a guest or register</div>
                 <div class="accordion-text">Register with us for future convenience</div>
                 <div class="accordion-flex">
-                    <input class="radio-input"type="radio" id="choice1" name="checkout" value="guest">
+                    <input class="radio-input" type="radio" id="choice1" name="checkout" value="guest">
                     <label for="choice1" class="radio-label">checkout as guest</label>
                 </div>
                 <div>
@@ -465,10 +466,10 @@
             <form class="accordion-right">
                 <div class="accordion-title">Already registed?</div>
                 <div class="accordion-text mb27">Please log in below</div>
-                <label class="radio-label" id="accordion-email">EMAIL ADDRESS <span class="red">*</span></label>
+                <label class="radio-label" for="accordion-email">EMAIL ADDRESS <span class="red">*</span></label>
                 <input id="accordion-email" type="email" required class="accordion-input">
-                <label class="radio-label" id="accordion-email">PASSWORD <span class="red">*</span></label>
-                <input id="accordion-email" type="password" required class="accordion-input">
+                <label class="radio-label" for="accordion-password">PASSWORD <span class="red">*</span></label>
+                <input id="accordion-password" type="password" required class="accordion-input">
                 <p class="red">* Required Fileds</p>
                 <button class="continue continue_width" type="submit">Log in</button>
             </form>
@@ -484,12 +485,12 @@
                 <div class="accordion-title">Check as a guest or register</div>
                 <div class="accordion-text">Register with us for future convenience</div>
                 <div class="accordion-flex">
-                    <input class="radio-input"type="radio" id="choice1" name="checkout" value="guest">
-                    <label for="choice1" class="radio-label">checkout as guest</label>
+                    <input class="radio-input" type="radio" id="choice3" name="checkout" value="guest">
+                    <label for="choice3" class="radio-label">checkout as guest</label>
                 </div>
                 <div>
-                    <input type="radio" id="choice2" name="checkout" value="register">
-                    <label for="choice2" class="radio-label">register</label>
+                    <input type="radio" id="choice4" name="checkout" value="register">
+                    <label for="choice4" class="radio-label">register</label>
                 </div>
                 <div class="accordion-title mt">register and save time!</div>
                 <div class="accordion-text">Register with us for future convenience</div>
@@ -500,10 +501,10 @@
             <form class="accordion-right">
                 <div class="accordion-title">Already registed?</div>
                 <div class="accordion-text mb27">Please log in below</div>
-                <label class="radio-label" id="accordion-email">EMAIL ADDRESS <span class="red">*</span></label>
-                <input id="accordion-email" type="email" required class="accordion-input">
-                <label class="radio-label" id="accordion-email">PASSWORD <span class="red">*</span></label>
-                <input id="accordion-email" type="password" required class="accordion-input">
+                <label class="radio-label" for="accordion-email2">EMAIL ADDRESS <span class="red">*</span></label>
+                <input id="accordion-email2" type="email" required class="accordion-input">
+                <label class="radio-label" for="accordion-password2">PASSWORD <span class="red">*</span></label>
+                <input id="accordion-password2" type="password" required class="accordion-input">
                 <p class="red">* Required Fileds</p>
                 <button class="continue" type="submit">Log in</button>
             </form>
@@ -519,12 +520,12 @@
                 <div class="accordion-title">Check as a guest or register</div>
                 <div class="accordion-text">Register with us for future convenience</div>
                 <div class="accordion-flex">
-                    <input class="radio-input"type="radio" id="choice1" name="checkout" value="guest">
-                    <label for="choice1" class="radio-label">checkout as guest</label>
+                    <input class="radio-input" type="radio" id="choice5" name="checkout" value="guest">
+                    <label for="choice5" class="radio-label">checkout as guest</label>
                 </div>
                 <div>
-                    <input type="radio" id="choice2" name="checkout" value="register">
-                    <label for="choice2" class="radio-label">register</label>
+                    <input type="radio" id="choice6" name="checkout" value="register">
+                    <label for="choice6" class="radio-label">register</label>
                 </div>
                 <div class="accordion-title mt">register and save time!</div>
                 <div class="accordion-text">Register with us for future convenience</div>
@@ -535,10 +536,10 @@
             <form class="accordion-right">
                 <div class="accordion-title">Already registed?</div>
                 <div class="accordion-text mb27">Please log in below</div>
-                <label class="radio-label" id="accordion-email">EMAIL ADDRESS <span class="red">*</span></label>
-                <input id="accordion-email" type="email" required class="accordion-input">
-                <label class="radio-label" id="accordion-email">PASSWORD <span class="red">*</span></label>
-                <input id="accordion-email" type="password" required class="accordion-input">
+                <label class="radio-label" for="accordion-email3">EMAIL ADDRESS <span class="red">*</span></label>
+                <input id="accordion-email3" type="email" required class="accordion-input">
+                <label class="radio-label" for="accordion-password3">PASSWORD <span class="red">*</span></label>
+                <input id="accordion-password3" type="password" required class="accordion-input">
                 <p class="red">* Required Fileds</p>
                 <button class="continue" type="submit">Log in</button>
             </form>
@@ -554,12 +555,12 @@
                 <div class="accordion-title">Check as a guest or register</div>
                 <div class="accordion-text">Register with us for future convenience</div>
                 <div class="accordion-flex">
-                    <input class="radio-input"type="radio" id="choice1" name="checkout" value="guest">
-                    <label for="choice1" class="radio-label">checkout as guest</label>
+                    <input class="radio-input" type="radio" id="choice7" name="checkout" value="guest">
+                    <label for="choice7" class="radio-label">checkout as guest</label>
                 </div>
                 <div>
-                    <input type="radio" id="choice2" name="checkout" value="register">
-                    <label for="choice2" class="radio-label">register</label>
+                    <input type="radio" id="choice8" name="checkout" value="register">
+                    <label for="choice8" class="radio-label">register</label>
                 </div>
                 <div class="accordion-title mt">register and save time!</div>
                 <div class="accordion-text">Register with us for future convenience</div>
@@ -570,10 +571,10 @@
             <form class="accordion-right">
                 <div class="accordion-title">Already registed?</div>
                 <div class="accordion-text mb27">Please log in below</div>
-                <label class="radio-label" id="accordion-email">EMAIL ADDRESS <span class="red">*</span></label>
-                <input id="accordion-email" type="email" required class="accordion-input">
-                <label class="radio-label" id="accordion-email">PASSWORD <span class="red">*</span></label>
-                <input id="accordion-email" type="password" required class="accordion-input">
+                <label class="radio-label" for="accordion-email4">EMAIL ADDRESS <span class="red">*</span></label>
+                <input id="accordion-email4" type="email" required class="accordion-input">
+                <label class="radio-label" for="accordion-password4">PASSWORD <span class="red">*</span></label>
+                <input id="accordion-password4" type="password" required class="accordion-input">
                 <p class="red">* Required Fileds</p>
                 <button class="continue" type="submit">Log in</button>
             </form>
@@ -589,12 +590,12 @@
                 <div class="accordion-title">Check as a guest or register</div>
                 <div class="accordion-text">Register with us for future convenience</div>
                 <div class="accordion-flex">
-                    <input class="radio-input"type="radio" id="choice1" name="checkout" value="guest">
-                    <label for="choice1" class="radio-label">checkout as guest</label>
+                    <input class="radio-input" type="radio" id="choice9" name="checkout" value="guest">
+                    <label for="choice9" class="radio-label">checkout as guest</label>
                 </div>
                 <div>
-                    <input type="radio" id="choice2" name="checkout" value="register">
-                    <label for="choice2" class="radio-label">register</label>
+                    <input type="radio" id="choice10" name="checkout" value="register">
+                    <label for="choice11" class="radio-label">register</label>
                 </div>
                 <div class="accordion-title mt">register and save time!</div>
                 <div class="accordion-text">Register with us for future convenience</div>
@@ -605,10 +606,10 @@
             <form class="accordion-right">
                 <div class="accordion-title">Already registed?</div>
                 <div class="accordion-text mb27">Please log in below</div>
-                <label class="radio-label" id="accordion-email">EMAIL ADDRESS <span class="red">*</span></label>
-                <input id="accordion-email" type="email" required class="accordion-input">
-                <label class="radio-label" id="accordion-email">PASSWORD <span class="red">*</span></label>
-                <input id="accordion-email" type="password" required class="accordion-input">
+                <label class="radio-label" for="accordion-email5">EMAIL ADDRESS <span class="red">*</span></label>
+                <input id="accordion-email5" type="email" required class="accordion-input">
+                <label class="radio-label" for="accordion-password5">PASSWORD <span class="red">*</span></label>
+                <input id="accordion-password5" type="password" required class="accordion-input">
                 <p class="red">* Required Fileds</p>
                 <button class="continue" type="submit">Log in</button>
             </form>
@@ -624,12 +625,12 @@
                 <div class="accordion-title">Check as a guest or register</div>
                 <div class="accordion-text">Register with us for future convenience</div>
                 <div class="accordion-flex">
-                    <input class="radio-input"type="radio" id="choice1" name="checkout" value="guest">
-                    <label for="choice1" class="radio-label">checkout as guest</label>
+                    <input class="radio-input" type="radio" id="choice11" name="checkout" value="guest">
+                    <label for="choice11" class="radio-label">checkout as guest</label>
                 </div>
                 <div>
-                    <input type="radio" id="choice2" name="checkout" value="register">
-                    <label for="choice2" class="radio-label">register</label>
+                    <input type="radio" id="choice12" name="checkout" value="register">
+                    <label for="choice12" class="radio-label">register</label>
                 </div>
                 <div class="accordion-title mt">register and save time!</div>
                 <div class="accordion-text">Register with us for future convenience</div>
@@ -640,10 +641,10 @@
             <form class="accordion-right">
                 <div class="accordion-title">Already registed?</div>
                 <div class="accordion-text mb27">Please log in below</div>
-                <label class="radio-label" id="accordion-email">EMAIL ADDRESS <span class="red">*</span></label>
-                <input id="accordion-email" type="email" required class="accordion-input">
-                <label class="radio-label" id="accordion-email">PASSWORD <span class="red">*</span></label>
-                <input id="accordion-email" type="password" required class="accordion-input">
+                <label class="radio-label" for="accordion-email6">EMAIL ADDRESS <span class="red">*</span></label>
+                <input id="accordion-email6" type="email" required class="accordion-input">
+                <label class="radio-label" for="accordion-password6">PASSWORD <span class="red">*</span></label>
+                <input id="accordion-password6" type="password" required class="accordion-input">
                 <p class="red">* Required Fileds</p>
                 <button class="continue" type="submit">Log in</button>
             </form>
@@ -682,21 +683,21 @@
             </div>
         </div>
         <div class="footer-text container">
-            <section class="footer-text-left">
+            <div class="footer-text-left">
                 <a class="logo" href="index.html">
                     <img src="img/logo.svg" alt="logo">
                     <p class="brand">Bran<span class="brand-d pink">d</span></p>
                 </a>
-                <article class="footer-text-left-article">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
+                <p class="footer-text-left-article">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
 
-                <p class="indent">Efficiently plagiarize 24/365 action items and focused infomediaries.
-                Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
-                    
-                <p class="indent">Objectively strategize seamless relationships via resource sucking testing procedures. Proactively cultivate next-generation results for value-added methodologies. Dynamically plagiarize unique methodologies after performance based methodologies. Monotonectally empower stand-alone mindshare rather than ubiquitous opportunities. Dynamically orchestrate resource sucking scenarios after alternative synergy.</p>
-                    
-                <p class="indent">Compellingly envisioneer corporate methods of empowerment before standards compliant technologies. Objectively facilitate progressive.</p>
-                </article>
-            </section>
+                    <p class="indent">Efficiently plagiarize 24/365 action items and focused infomediaries.
+                    Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+                        
+                    <p class="indent">Objectively strategize seamless relationships via resource sucking testing procedures. Proactively cultivate next-generation results for value-added methodologies. Dynamically plagiarize unique methodologies after performance based methodologies. Monotonectally empower stand-alone mindshare rather than ubiquitous opportunities. Dynamically orchestrate resource sucking scenarios after alternative synergy.</p>
+                        
+                    <p class="indent">Compellingly envisioneer corporate methods of empowerment before standards compliant technologies. Objectively facilitate progressive.</p>
+                </p>
+            </div>
             <div class="footer-text-right">
                 <div>
                     <div class="map-head pink">Company</div>
@@ -756,8 +757,6 @@
                     </div>
                 </div>
             </div>
-        
     </footer>   
-    </div>
 </body>
 </html>
