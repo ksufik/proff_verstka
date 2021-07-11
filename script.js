@@ -177,3 +177,18 @@ addToCart.forEach(addTo => {
     });
 });
 
+//Валидация формы на странице checkout
+function valid() {
+    let nameSubmit = document.getElementById('accordion-name');
+    let nameValid = /a-z|а-яё/gi;
+    if (nameSubmit.value.match(nameValid)) {
+        console.log('works');
+    }
+    let phoneSubmit = document.getElementById('accordion-phone');
+    let emailSubmit = document.getElementById('accordion-email');
+    let emailValid = /^([a-z0-9_\.-]+)@([a-z0-9_\.-]+)\.([a-z\.]{2,6})$/;
+
+}
+
+let formSubmit = document.querySelector('.accordion-button');
+formSubmit.addEventListener('click', valid());
