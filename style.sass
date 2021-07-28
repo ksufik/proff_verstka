@@ -212,9 +212,9 @@ body
     top: -6px
     left: 70px
 
-.mega-menu-position::before
-    content: ''
-    left: 70px
+// .mega-menu-position::before
+//     content: ''
+//     left: 70px
 
 .input-text
     outline: none
@@ -278,7 +278,7 @@ body
     background-color: #fff
     display: none
     z-index: 1
-    left: -50%
+    right: -113%
     border: $bd solid #e8e8e8
     border-radius: 5px
     top: 55px
@@ -303,9 +303,23 @@ body
     font-size: 15px
     padding: 8px 29px 8px 19px
     outline: none
-
-.my-account
     display: block
+
+.cart-card
+    display: block
+    position: relative
+
+.cart-count
+    position: absolute
+    //background: red
+    width: 10px
+    //height: 10px
+    left: 13px
+    top: 1px
+    color: $pink
+    font-size: 12px
+    line-height: 26px
+    font-weight: 1000
 
 .my-account::after
     content: '\f0d7'
@@ -324,6 +338,8 @@ body
     width: 230px
     display: flex
     justify-content: space-between
+    &_size
+        width: 72px
 
 .my-acc-right
     display: flex
