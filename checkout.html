@@ -1,762 +1,777 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Internet-shop</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/90691aa70a.js" crossorigin="anonymous"></script>
-    </head>
-    <header class="header">
-        <div class="container header-box">
-            <div class="header-left">
-                 <a class="logo" href="index.html">
-                     <img src="img/logo.svg" alt="logo">
-                     <p class="brand">Bran<span class="brand-d pink">d</span></p>
-                 </a>
-                    <details class="details-browse">
-                        <summary class="browse">Browse</summary>
-                        <div class="mega-menu mega-menu-browse">
-                            <div class="mega-item">
-                                <p class="mega-head">Women</p>
-                                <ul class="mega-list">
-                                    <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                    <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                    <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                                    <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
-                                    <li><a href="product.html" class="mega-link link">Blazers</a></li>
-                                    <li><a href="product.html" class="mega-link link">Demin</a></li>
-                                    <li><a href="product.html" class="mega-link link">Leggings/Pants</a></li>
-                                    <li><a href="product.html" class="mega-link link">Skirts/Shorts</a></li>
-                                    <li><a href="product.html" class="mega-link link">Accessories</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-item">
-                                <p class="mega-head">Men</p>
-                                <ul class="mega-list">
-                                    <li><a href="product.html" class="mega-link link">Tees/Tank tops</a></li>
-                                    <li><a href="product.html" class="mega-link link">Shirts/Polos</a></li>
-                                    <li><a href="product.html" class="mega-link link">Sweaters</a></li>
-                                    <li><a href="product.html" class="mega-link link">Sweatshirts/Hoodies</a></li>
-                                    <li><a href="product.html" class="mega-link link">Blazers</a></li>
-                                    <li><a href="product.html" class="mega-link link">Jackets/Vests</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </details>
-                    <form action="#" class="header-form">
-                        <input class="input-text" type="text" placeholder="Search for Item...">
-                    <button type="submit"  class="fa-search"></button>                
-                </form>
-            </div>
-            <div class="header-right">
-                 <a href="shopping-cart.html"><img class="cart" src="img/cart.svg" alt="cart"></a>
-                 <details class="details-my-account">
-                    <summary class="button my-account">My account</summary>
-                    <div class="my-account-menu">
-                       <figure class="my-account-item">
-                           <img src="img/my-acc-1.jpg" alt="photo">
-                           <div class="my-acc-right">
-                                <div class="my-acc-info">
-                                    <h3 class="my-acc-head">Rebox Zane</h3>
-                                        <div class="review_stars stars-height" >
-                                            <input id="star5-5" type="radio" name="stars"/>
-                                            <label title="Отлично" for="star5-5">
-                                                <i class="fas fa-star"></i>
-                                            </label>
-                                            <input id="star5-4" type="radio" name="stars"/>
-                                            <label title="Хорошо" for="star5-4">
-                                                <i class="fas fa-star"></i>
-                                            </label>
-                                            <input id="star5-3" type="radio" name="stars"  />
-                                            <label title="Нормально" for="star5-3">
-                                                <i class="fas fa-star"></i>
-                                            </label>
-                                            <input id="star5-2" type="radio" name="stars"/>
-                                            <label title="Плохо" for="star5-2">
-                                                <i class="fas fa-star"></i>
-                                            </label>
-                                            <input id="star5-1" type="radio" name="stars"/>
-                                            <label title="Ужасно" for="star5-1">
-                                                <i class="fas fa-star"></i>
-                                            </label>
-                                        </div>
-                                    <div class="my-acc-text">1 <span class="text-x">x</span> $250</div>
-                                </div>
-                                <a class="fas fa-times-circle" href="#"></a>
-                           </div>
-                       </figure>
-                       <hr class="my-acc-hr">
-                       <figure class="my-account-item">
-                            <img src="img/my-acc-2.jpg" alt="photo">
-                            <div class="my-acc-right">
-                                <div class="my-acc-info">
-                                    <h3 class="my-acc-head">Rebox Zane</h3>
-                                        <div class="review_stars stars-height" >
-                                            <input id="star6-5" type="radio" name="stars"/>
-                                            <label title="Отлично" for="star6-5">
-                                                <i class="fas fa-star"></i>
-                                            </label>
-                                            <input id="star6-4" type="radio" name="stars"/>
-                                            <label title="Хорошо" for="star6-4">
-                                                <i class="fas fa-star"></i>
-                                            </label>
-                                            <input id="star6-3" type="radio" name="stars"  />
-                                            <label title="Нормально" for="star6-3">
-                                                <i class="fas fa-star"></i>
-                                            </label>
-                                            <input id="star6-2" type="radio" name="stars"/>
-                                            <label title="Плохо" for="star6-2">
-                                                <i class="fas fa-star"></i>
-                                            </label>
-                                            <input id="star6-1" type="radio" name="stars"/>
-                                            <label title="Ужасно" for="star6-1">
-                                                <i class="fas fa-star"></i>
-                                            </label>
-                                        </div>
-                                    <div class="my-acc-text">1 <span class="text-x">x</span> $250</div>
-                                </div>
-                                <a class="fas fa-times-circle" href="#"></a>
-                            </div>
-                        </figure>
-                        <hr class="my-acc-hr">
-                        <div class="cost">
-                            <p>TOTAL</p>
-                            <p>$500.00</p>
-                        </div>
-                        <a href="checkout.html" class="my-acc-button">Checkout</a>
-                        <a href="shopping-cart.html" class="my-acc-button">Go to cart</a>  
+
+<head>
+    <meta charset="utf-8">
+    <title>Internet-shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/90691aa70a.js" crossorigin="anonymous"></script>
+</head>
+<header class="header">
+    <div class="container header-box">
+        <div class="header-left">
+            <a class="logo" href="index.html">
+                <img src="img/logo.svg" alt="logo">
+                <p class="brand">Bran<span class="brand-d pink">d</span></p>
+            </a>
+            <details class="details-browse">
+                <summary class="browse">Browse</summary>
+                <div class="mega-menu mega-menu-browse">
+                    <div class="mega-item">
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                            <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
+                            <li><a href="product.html" class="mega-link link">Blazers</a></li>
+                            <li><a href="product.html" class="mega-link link">Demin</a></li>
+                            <li><a href="product.html" class="mega-link link">Leggings/Pants</a></li>
+                            <li><a href="product.html" class="mega-link link">Skirts/Shorts</a></li>
+                            <li><a href="product.html" class="mega-link link">Accessories</a></li>
+                        </ul>
                     </div>
-                </details>
-            </div>
+                    <div class="mega-item">
+                        <p class="mega-head">Men</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Tees/Tank tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Shirts/Polos</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweatshirts/Hoodies</a></li>
+                            <li><a href="product.html" class="mega-link link">Blazers</a></li>
+                            <li><a href="product.html" class="mega-link link">Jackets/Vests</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </details>
+            <form action="#" class="header-form">
+                <input class="input-text" type="text" placeholder="Search for Item...">
+                <button type="submit" class="fa-search"></button>
+            </form>
         </div>
-     </header>
-     <nav class="navigation">
-         <div class="container">
-             <ul class="menu">
-                 <li class="menu-list"><a href="product.html" class="menu-link">Home</a>
-                     <div class="mega-menu mega-menu-position">
-                         <div class="mega-item">
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                                 <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
-                                 <li><a href="product.html" class="mega-link link">Blazers</a></li>
-                                 <li><a href="product.html" class="mega-link link">Demin</a></li>
-                                 <li><a href="product.html" class="mega-link link">Leggings/Pants</a></li>
-                                 <li><a href="product.html" class="mega-link link">Skirts/Shorts</a></li>
-                                 <li><a href="product.html" class="mega-link link">Accessories</a></li>
-                             </ul>
-                         </div>
-                         <div class="mega-item">
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                                 <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
-                             </ul>
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                             </ul>
-                         </div>
-                         <div class="mega-item">
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                                 <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
-                             </ul>
-                         </div>
-                     </div>
-                 </li>
-                 <li class="menu-list"><a href="product.html" class="menu-link">Man</a>
-                     <div class="mega-menu mega-menu-position">
-                         <div class="mega-item">
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                                 <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
-                                 <li><a href="product.html" class="mega-link link">Blazers</a></li>
-                                 <li><a href="product.html" class="mega-link link">Demin</a></li>
-                                 <li><a href="product.html" class="mega-link link">Leggings/Pants</a></li>
-                                 <li><a href="product.html" class="mega-link link">Skirts/Shorts</a></li>
-                                 <li><a href="product.html" class="mega-link link">Accessories</a></li>
-                             </ul>
-                         </div>
-                         <div class="mega-item">
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                                 <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
-                             </ul>
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                             </ul>
-                         </div>
-                         <div class="mega-item">
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                                 <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
-                             </ul>
-                         </div>
-                     </div>
-                 </li>
-                 <li class="menu-list product-menu"><a href="product.html" class="menu-link">Women</a>
-                     <div class="mega-menu mega-menu-position">
-                         <div class="mega-item">
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                                 <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
-                                 <li><a href="product.html" class="mega-link link">Blazers</a></li>
-                                 <li><a href="product.html" class="mega-link link">Demin</a></li>
-                                 <li><a href="product.html" class="mega-link link">Leggings/Pants</a></li>
-                                 <li><a href="product.html" class="mega-link link">Skirts/Shorts</a></li>
-                                 <li><a href="product.html" class="mega-link link">Accessories</a></li>
-                             </ul>
-                         </div>
-                         <div class="mega-item">
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                                 <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
-                             </ul>
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                             </ul>
-                         </div>
-                         <div class="mega-item">
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                                 <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
-                             </ul>
-                         </div>
-                     </div>
-                 </li>
-                 <li class="menu-list"><a href="product.html" class="menu-link">Kids</a>
-                     <div class="mega-menu mega-menu-position">
-                         <div class="mega-item">
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                                 <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
-                                 <li><a href="product.html" class="mega-link link">Blazers</a></li>
-                                 <li><a href="product.html" class="mega-link link">Demin</a></li>
-                                 <li><a href="product.html" class="mega-link link">Leggings/Pants</a></li>
-                                 <li><a href="product.html" class="mega-link link">Skirts/Shorts</a></li>
-                                 <li><a href="product.html" class="mega-link link">Accessories</a></li>
-                             </ul>
-                         </div>
-                         <div class="mega-item">
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                                 <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
-                             </ul>
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                             </ul>
-                         </div>
-                         <div class="mega-item">
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                                 <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
-                             </ul>
-                         </div>
-                     </div>
-                 </li>
-                 <li class="menu-list"><a href="product.html" class="menu-link">Accoseriese</a>
-                     <div class="mega-menu mega-menu-position mega-reverse">
-                         <div class="mega-item">
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                                 <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
-                                 <li><a href="product.html" class="mega-link link">Blazers</a></li>
-                                 <li><a href="product.html" class="mega-link link">Demin</a></li>
-                                 <li><a href="product.html" class="mega-link link">Leggings/Pants</a></li>
-                                 <li><a href="product.html" class="mega-link link">Skirts/Shorts</a></li>
-                                 <li><a href="product.html" class="mega-link link">Accessories</a></li>
-                             </ul>
-                         </div>
-                         <div class="mega-item">
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                                 <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
-                             </ul>
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                             </ul>
-                         </div>
-                         <div class="mega-item">
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                                 <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
-                             </ul>
-                         </div>
-                     </div>
-                 </li>
-                 <li class="menu-list"><a href="product.html" class="menu-link">Featured</a>
-                     <div class="mega-menu mega-menu-position mega-reverse">
-                         <div class="mega-item">
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                                 <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
-                                 <li><a href="product.html" class="mega-link link">Blazers</a></li>
-                                 <li><a href="product.html" class="mega-link link">Demin</a></li>
-                                 <li><a href="product.html" class="mega-link link">Leggings/Pants</a></li>
-                                 <li><a href="product.html" class="mega-link link">Skirts/Shorts</a></li>
-                                 <li><a href="product.html" class="mega-link link">Accessories</a></li>
-                             </ul>
-                         </div>
-                         <div class="mega-item">
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                                 <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
-                             </ul>
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                             </ul>
-                         </div>
-                         <div class="mega-item">
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                                 <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
-                             </ul>
-                         </div>
-                     </div>
-                 </li>
-                 <li class="menu-list"><a href="product.html" class="menu-link">Hot deals</a>
-                     <div class="mega-menu mega-menu-position mega-reverse">
-                         <div class="mega-item">
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                                 <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
-                                 <li><a href="product.html" class="mega-link link">Blazers</a></li>
-                                 <li><a href="product.html" class="mega-link link">Demin</a></li>
-                                 <li><a href="product.html" class="mega-link link">Leggings/Pants</a></li>
-                                 <li><a href="product.html" class="mega-link link">Skirts/Shorts</a></li>
-                                 <li><a href="product.html" class="mega-link link">Accessories</a></li>
-                             </ul>
-                         </div>
-                         <div class="mega-item">
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                                 <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
-                             </ul>
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                             </ul>
-                         </div>
-                         <div class="mega-item">
-                             <p class="mega-head">Women</p>
-                             <ul class="mega-list">
-                                 <li><a href="product.html" class="mega-link link">Dresses</a></li>
-                                 <li><a href="product.html" class="mega-link link">Tops</a></li>
-                                 <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
-                                 <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
-                             </ul>
-                         </div>
-                     </div>
-                 </li>
-             </ul>
-         </div>
-     </nav>
-     <div class="arrivals">
-        <div class="arrivals-box container">
-            <div class="arrivals-text">New arrivals</div>
+        <div class="header-right">
+            <a href="shopping-cart.html"><img class="cart" src="img/cart.svg" alt="cart"></a>
+            <details class="details-my-account">
+                <summary class="button my-account">My account</summary>
+                <div class="my-account-menu">
+                    <figure class="my-account-item">
+                        <img src="img/my-acc-1.jpg" alt="photo">
+                        <div class="my-acc-right">
+                            <div class="my-acc-info">
+                                <h3 class="my-acc-head">Rebox Zane</h3>
+                                <div class="review_stars stars-height">
+                                    <input id="star5-5" type="radio" name="stars" />
+                                    <label title="Отлично" for="star5-5">
+                                        <i class="fas fa-star"></i>
+                                    </label>
+                                    <input id="star5-4" type="radio" name="stars" />
+                                    <label title="Хорошо" for="star5-4">
+                                        <i class="fas fa-star"></i>
+                                    </label>
+                                    <input id="star5-3" type="radio" name="stars" />
+                                    <label title="Нормально" for="star5-3">
+                                        <i class="fas fa-star"></i>
+                                    </label>
+                                    <input id="star5-2" type="radio" name="stars" />
+                                    <label title="Плохо" for="star5-2">
+                                        <i class="fas fa-star"></i>
+                                    </label>
+                                    <input id="star5-1" type="radio" name="stars" />
+                                    <label title="Ужасно" for="star5-1">
+                                        <i class="fas fa-star"></i>
+                                    </label>
+                                </div>
+                                <div class="my-acc-text">1 <span class="text-x">x</span> $250</div>
+                            </div>
+                            <a class="fas fa-times-circle" href="#"></a>
+                        </div>
+                    </figure>
+                    <hr class="my-acc-hr">
+                    <figure class="my-account-item">
+                        <img src="img/my-acc-2.jpg" alt="photo">
+                        <div class="my-acc-right">
+                            <div class="my-acc-info">
+                                <h3 class="my-acc-head">Rebox Zane</h3>
+                                <div class="review_stars stars-height">
+                                    <input id="star6-5" type="radio" name="stars" />
+                                    <label title="Отлично" for="star6-5">
+                                        <i class="fas fa-star"></i>
+                                    </label>
+                                    <input id="star6-4" type="radio" name="stars" />
+                                    <label title="Хорошо" for="star6-4">
+                                        <i class="fas fa-star"></i>
+                                    </label>
+                                    <input id="star6-3" type="radio" name="stars" />
+                                    <label title="Нормально" for="star6-3">
+                                        <i class="fas fa-star"></i>
+                                    </label>
+                                    <input id="star6-2" type="radio" name="stars" />
+                                    <label title="Плохо" for="star6-2">
+                                        <i class="fas fa-star"></i>
+                                    </label>
+                                    <input id="star6-1" type="radio" name="stars" />
+                                    <label title="Ужасно" for="star6-1">
+                                        <i class="fas fa-star"></i>
+                                    </label>
+                                </div>
+                                <div class="my-acc-text">1 <span class="text-x">x</span> $250</div>
+                            </div>
+                            <a class="fas fa-times-circle" href="#"></a>
+                        </div>
+                    </figure>
+                    <hr class="my-acc-hr">
+                    <div class="cost">
+                        <p>TOTAL</p>
+                        <p>$500.00</p>
+                    </div>
+                    <a href="checkout.html" class="my-acc-button">Checkout</a>
+                    <a href="shopping-cart.html" class="my-acc-button">Go to cart</a>
+                </div>
+            </details>
+        </div>
+    </div>
+</header>
+<nav class="navigation">
+    <div class="container">
+        <ul class="menu">
+            <li class="menu-list"><a href="product.html" class="menu-link">Home</a>
+                <div class="mega-menu mega-menu-position">
+                    <div class="mega-item">
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                            <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
+                            <li><a href="product.html" class="mega-link link">Blazers</a></li>
+                            <li><a href="product.html" class="mega-link link">Demin</a></li>
+                            <li><a href="product.html" class="mega-link link">Leggings/Pants</a></li>
+                            <li><a href="product.html" class="mega-link link">Skirts/Shorts</a></li>
+                            <li><a href="product.html" class="mega-link link">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-item">
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                            <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
+                        </ul>
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-item">
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                            <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="menu-list"><a href="product.html" class="menu-link">Man</a>
+                <div class="mega-menu mega-menu-position">
+                    <div class="mega-item">
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                            <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
+                            <li><a href="product.html" class="mega-link link">Blazers</a></li>
+                            <li><a href="product.html" class="mega-link link">Demin</a></li>
+                            <li><a href="product.html" class="mega-link link">Leggings/Pants</a></li>
+                            <li><a href="product.html" class="mega-link link">Skirts/Shorts</a></li>
+                            <li><a href="product.html" class="mega-link link">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-item">
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                            <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
+                        </ul>
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-item">
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                            <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="menu-list product-menu"><a href="product.html" class="menu-link">Women</a>
+                <div class="mega-menu mega-menu-position">
+                    <div class="mega-item">
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                            <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
+                            <li><a href="product.html" class="mega-link link">Blazers</a></li>
+                            <li><a href="product.html" class="mega-link link">Demin</a></li>
+                            <li><a href="product.html" class="mega-link link">Leggings/Pants</a></li>
+                            <li><a href="product.html" class="mega-link link">Skirts/Shorts</a></li>
+                            <li><a href="product.html" class="mega-link link">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-item">
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                            <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
+                        </ul>
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-item">
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                            <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="menu-list"><a href="product.html" class="menu-link">Kids</a>
+                <div class="mega-menu mega-menu-position">
+                    <div class="mega-item">
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                            <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
+                            <li><a href="product.html" class="mega-link link">Blazers</a></li>
+                            <li><a href="product.html" class="mega-link link">Demin</a></li>
+                            <li><a href="product.html" class="mega-link link">Leggings/Pants</a></li>
+                            <li><a href="product.html" class="mega-link link">Skirts/Shorts</a></li>
+                            <li><a href="product.html" class="mega-link link">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-item">
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                            <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
+                        </ul>
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-item">
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                            <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="menu-list"><a href="product.html" class="menu-link">Accoseriese</a>
+                <div class="mega-menu mega-menu-position mega-reverse">
+                    <div class="mega-item">
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                            <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
+                            <li><a href="product.html" class="mega-link link">Blazers</a></li>
+                            <li><a href="product.html" class="mega-link link">Demin</a></li>
+                            <li><a href="product.html" class="mega-link link">Leggings/Pants</a></li>
+                            <li><a href="product.html" class="mega-link link">Skirts/Shorts</a></li>
+                            <li><a href="product.html" class="mega-link link">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-item">
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                            <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
+                        </ul>
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-item">
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                            <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="menu-list"><a href="product.html" class="menu-link">Featured</a>
+                <div class="mega-menu mega-menu-position mega-reverse">
+                    <div class="mega-item">
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                            <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
+                            <li><a href="product.html" class="mega-link link">Blazers</a></li>
+                            <li><a href="product.html" class="mega-link link">Demin</a></li>
+                            <li><a href="product.html" class="mega-link link">Leggings/Pants</a></li>
+                            <li><a href="product.html" class="mega-link link">Skirts/Shorts</a></li>
+                            <li><a href="product.html" class="mega-link link">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-item">
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                            <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
+                        </ul>
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-item">
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                            <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="menu-list"><a href="product.html" class="menu-link">Hot deals</a>
+                <div class="mega-menu mega-menu-position mega-reverse">
+                    <div class="mega-item">
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                            <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
+                            <li><a href="product.html" class="mega-link link">Blazers</a></li>
+                            <li><a href="product.html" class="mega-link link">Demin</a></li>
+                            <li><a href="product.html" class="mega-link link">Leggings/Pants</a></li>
+                            <li><a href="product.html" class="mega-link link">Skirts/Shorts</a></li>
+                            <li><a href="product.html" class="mega-link link">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-item">
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                            <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
+                        </ul>
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-item">
+                        <p class="mega-head">Women</p>
+                        <ul class="mega-list">
+                            <li><a href="product.html" class="mega-link link">Dresses</a></li>
+                            <li><a href="product.html" class="mega-link link">Tops</a></li>
+                            <li><a href="product.html" class="mega-link link">Sweaters/Knits</a></li>
+                            <li><a href="product.html" class="mega-link link">Jackets/Coats</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="arrivals">
+    <div class="arrivals-box container">
+        <div class="arrivals-text">New arrivals</div>
+        <div>
+            <a class="arrivals-crumbs" href="index.html"> Home </a>
+            / <a class="arrivals-crumbs" href="product.html"> Men </a>/
+            <a class="arrivals-crumbs" href="product.html"><span class="pink">New arrivals</span></a>
+        </div>
+    </div>
+</div>
+<details class="accordion container">
+    <summary class="accordion-head">
+        01.<span class="space"> Shipping Adress</span>
+    </summary>
+    <div class="accordion-flex">
+        <form class="accordion-left">
+            <div class="accordion-title">Check as a guest or register</div>
+            <div class="accordion-text">Register with us for future convenience</div>
+            <div class="accordion-flex">
+                <input class="radio-input" type="radio" id="choice1" name="checkout" value="guest">
+                <label for="choice1" class="radio-label">checkout as guest</label>
+            </div>
             <div>
-                <a class="arrivals-crumbs" href="index.html"> Home </a>
-                / <a class="arrivals-crumbs" href="product.html"> Men </a>/ 
-                <a class="arrivals-crumbs" href="product.html"><span class="pink">New arrivals</span></a>
+                <input type="radio" id="choice2" name="checkout" value="register">
+                <label for="choice2" class="radio-label">register</label>
+            </div>
+            <div class="accordion-title mt">register and save time!</div>
+            <div class="accordion-text">Register with us for future convenience</div>
+            <div class="accordion-text fa-angle-double-right mb"> Fast and easy checkout</div>
+            <div class="accordion-text fa-angle-double-right mb5"> Easy access to your order history and status</div>
+            <button class="continue continue_width" type="submit">Continue</button>
+        </form>
+        <form class="accordion-right">
+            <div class="accordion-title">Already registed?</div>
+            <div class="accordion-text mb27">Please log in below</div>
+            <label class="radio-label" for="accordion-name">NAME <span class="red">*</span></label>
+            <input id="accordion-name" type="text" required class="accordion-input">
+            <label class="radio-label" for="accordion-phone">PHONE <span class="red">*</span></label>
+            <input id="accordion-phone" type="tel" class="accordion-input">
+            <label class="radio-label" for="accordion-email">EMAIL ADDRESS <span class="red">*</span></label>
+            <input id="accordion-email" type="email" class="accordion-input">
+            <label class="radio-label" for="accordion-text">TEXT </label>
+            <textarea id="accordion-text" type="text" class="accordion-input"></textarea>
+            <p class="red">* Required Fileds</p>
+            <button class="continue continue_width accordion-button" type="submit">Отправить</button>
+        </form>
+    </div>
+</details>
+<hr class="container accordion-hr">
+<details class="accordion container">
+    <summary class="accordion-head">
+        02.<span class="space"> Billing Information</span>
+    </summary>
+    <div class="accordion-flex">
+        <form class="accordion-left">
+            <div class="accordion-title">Check as a guest or register</div>
+            <div class="accordion-text">Register with us for future convenience</div>
+            <div class="accordion-flex">
+                <input class="radio-input" type="radio" id="choice3" name="checkout" value="guest">
+                <label for="choice3" class="radio-label">checkout as guest</label>
+            </div>
+            <div>
+                <input type="radio" id="choice4" name="checkout" value="register">
+                <label for="choice4" class="radio-label">register</label>
+            </div>
+            <div class="accordion-title mt">register and save time!</div>
+            <div class="accordion-text">Register with us for future convenience</div>
+            <div class="accordion-text fa-angle-double-right mb"> Fast and easy checkout</div>
+            <div class="accordion-text fa-angle-double-right mb5"> Easy access to your order history and status</div>
+            <button class="continue" type="submit">Continue</button>
+        </form>
+        <form class="accordion-right">
+            <div class="accordion-title">Already registed?</div>
+            <div class="accordion-text mb27">Please log in below</div>
+            <label class="radio-label" for="accordion-email2">EMAIL ADDRESS <span class="red">*</span></label>
+            <input id="accordion-email2" type="email" required class="accordion-input">
+            <label class="radio-label" for="accordion-password2">PASSWORD <span class="red">*</span></label>
+            <input id="accordion-password2" type="password" required class="accordion-input">
+            <p class="red">* Required Fileds</p>
+            <button class="continue" type="submit">Log in</button>
+        </form>
+    </div>
+</details>
+<hr class="container accordion-hr">
+<details class="accordion container">
+    <summary class="accordion-head">
+        03.<span class="space"> Shipping Information</span>
+    </summary>
+    <div class="accordion-flex">
+        <form class="accordion-left">
+            <div class="accordion-title">Check as a guest or register</div>
+            <div class="accordion-text">Register with us for future convenience</div>
+            <div class="accordion-flex">
+                <input class="radio-input" type="radio" id="choice5" name="checkout" value="guest">
+                <label for="choice5" class="radio-label">checkout as guest</label>
+            </div>
+            <div>
+                <input type="radio" id="choice6" name="checkout" value="register">
+                <label for="choice6" class="radio-label">register</label>
+            </div>
+            <div class="accordion-title mt">register and save time!</div>
+            <div class="accordion-text">Register with us for future convenience</div>
+            <div class="accordion-text fa-angle-double-right mb"> Fast and easy checkout</div>
+            <div class="accordion-text fa-angle-double-right mb5"> Easy access to your order history and status</div>
+            <button class="continue" type="submit">Continue</button>
+        </form>
+        <form class="accordion-right">
+            <div class="accordion-title">Already registed?</div>
+            <div class="accordion-text mb27">Please log in below</div>
+            <label class="radio-label" for="accordion-email3">EMAIL ADDRESS <span class="red">*</span></label>
+            <input id="accordion-email3" type="email" required class="accordion-input">
+            <label class="radio-label" for="accordion-password3">PASSWORD <span class="red">*</span></label>
+            <input id="accordion-password3" type="password" required class="accordion-input">
+            <p class="red">* Required Fileds</p>
+            <button class="continue" type="submit">Log in</button>
+        </form>
+    </div>
+</details>
+<hr class="container accordion-hr">
+<details class="accordion container">
+    <summary class="accordion-head">
+        04.<span class="space"> Shipping Method</span>
+    </summary>
+    <div class="accordion-flex">
+        <form class="accordion-left">
+            <div class="accordion-title">Check as a guest or register</div>
+            <div class="accordion-text">Register with us for future convenience</div>
+            <div class="accordion-flex">
+                <input class="radio-input" type="radio" id="choice7" name="checkout" value="guest">
+                <label for="choice7" class="radio-label">checkout as guest</label>
+            </div>
+            <div>
+                <input type="radio" id="choice8" name="checkout" value="register">
+                <label for="choice8" class="radio-label">register</label>
+            </div>
+            <div class="accordion-title mt">register and save time!</div>
+            <div class="accordion-text">Register with us for future convenience</div>
+            <div class="accordion-text fa-angle-double-right mb"> Fast and easy checkout</div>
+            <div class="accordion-text fa-angle-double-right mb5"> Easy access to your order history and status</div>
+            <button class="continue" type="submit">Continue</button>
+        </form>
+        <form class="accordion-right">
+            <div class="accordion-title">Already registed?</div>
+            <div class="accordion-text mb27">Please log in below</div>
+            <label class="radio-label" for="accordion-email4">EMAIL ADDRESS <span class="red">*</span></label>
+            <input id="accordion-email4" type="email" required class="accordion-input">
+            <label class="radio-label" for="accordion-password4">PASSWORD <span class="red">*</span></label>
+            <input id="accordion-password4" type="password" required class="accordion-input">
+            <p class="red">* Required Fileds</p>
+            <button class="continue" type="submit">Log in</button>
+        </form>
+    </div>
+</details>
+<hr class="container accordion-hr">
+<details class="accordion container">
+    <summary class="accordion-head">
+        05.<span class="space"> Payment Method</span>
+    </summary>
+    <div class="accordion-flex">
+        <form class="accordion-left">
+            <div class="accordion-title">Check as a guest or register</div>
+            <div class="accordion-text">Register with us for future convenience</div>
+            <div class="accordion-flex">
+                <input class="radio-input" type="radio" id="choice9" name="checkout" value="guest">
+                <label for="choice9" class="radio-label">checkout as guest</label>
+            </div>
+            <div>
+                <input type="radio" id="choice10" name="checkout" value="register">
+                <label for="choice11" class="radio-label">register</label>
+            </div>
+            <div class="accordion-title mt">register and save time!</div>
+            <div class="accordion-text">Register with us for future convenience</div>
+            <div class="accordion-text fa-angle-double-right mb"> Fast and easy checkout</div>
+            <div class="accordion-text fa-angle-double-right mb5"> Easy access to your order history and status</div>
+            <button class="continue" type="submit">Continue</button>
+        </form>
+        <form class="accordion-right">
+            <div class="accordion-title">Already registed?</div>
+            <div class="accordion-text mb27">Please log in below</div>
+            <label class="radio-label" for="accordion-email5">EMAIL ADDRESS <span class="red">*</span></label>
+            <input id="accordion-email5" type="email" required class="accordion-input">
+            <label class="radio-label" for="accordion-password5">PASSWORD <span class="red">*</span></label>
+            <input id="accordion-password5" type="password" required class="accordion-input">
+            <p class="red">* Required Fileds</p>
+            <button class="continue" type="submit">Log in</button>
+        </form>
+    </div>
+</details>
+<hr class="container accordion-hr">
+<details class="accordion container">
+    <summary class="accordion-head">
+        06.<span class="space"> Order Review</span>
+    </summary>
+    <div class="accordion-flex">
+        <form class="accordion-left">
+            <div class="accordion-title">Check as a guest or register</div>
+            <div class="accordion-text">Register with us for future convenience</div>
+            <div class="accordion-flex">
+                <input class="radio-input" type="radio" id="choice11" name="checkout" value="guest">
+                <label for="choice11" class="radio-label">checkout as guest</label>
+            </div>
+            <div>
+                <input type="radio" id="choice12" name="checkout" value="register">
+                <label for="choice12" class="radio-label">register</label>
+            </div>
+            <div class="accordion-title mt">register and save time!</div>
+            <div class="accordion-text">Register with us for future convenience</div>
+            <div class="accordion-text fa-angle-double-right mb"> Fast and easy checkout</div>
+            <div class="accordion-text fa-angle-double-right mb5"> Easy access to your order history and status</div>
+            <button class="continue" type="submit">Continue</button>
+        </form>
+        <form class="accordion-right">
+            <div class="accordion-title">Already registed?</div>
+            <div class="accordion-text mb27">Please log in below</div>
+            <label class="radio-label" for="accordion-email6">EMAIL ADDRESS <span class="red">*</span></label>
+            <input id="accordion-email6" type="email" required class="accordion-input">
+            <label class="radio-label" for="accordion-password6">PASSWORD <span class="red">*</span></label>
+            <input id="accordion-password6" type="password" required class="accordion-input">
+            <p class="red">* Required Fileds</p>
+            <button class="continue" type="submit">Log in</button>
+        </form>
+    </div>
+</details>
+<hr class="container accordion-hr">
+<footer class="footer">
+    <div class="feedback-block">
+        <div class="feedback-container container">
+            <figure class="feedback-figure">
+                <img class="feedback-img" src="img/face.png" alt="feedback">
+                <div class="feedback-all-text">
+                    <div class="feedback-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                        a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</div>
+                    <div class="feedback-name">Bin Burhan</div>
+                    <div class="feedback-place">Dhaka, Bd</div>
+                    <div class="slide-box">
+                        <div class="slide-part"></div>
+                        <div class="slide-part"></div>
+                        <div class="slide-part"></div>
+                    </div>
+                </div>
+            </figure>
+            <div class="br"></div>
+            <div class="subscribe">
+                <div class="subscribe-text">
+                    <div class="subscribe-head">Subscribe
+                        <div class="subscribe-article">FOR OUR NEWLETTER AND PROMOTION</div>
+                    </div>
+                </div>
+                <form class="subscribe-form" action="#">
+                    <input class="input-subscribe" type="email" name="simple" placeholder="Enter Your Email">
+                    <button class="subscribe-button button" type="submit">Subscribe</button>
+                </form>
             </div>
         </div>
     </div>
-    <details class="accordion container">
-        <summary class="accordion-head">
-            01.<span class="space"> Shipping Adress</span>
-        </summary>
-        <div class="accordion-flex">
-            <form class="accordion-left">
-                <div class="accordion-title">Check as a guest or register</div>
-                <div class="accordion-text">Register with us for future convenience</div>
-                <div class="accordion-flex">
-                    <input class="radio-input" type="radio" id="choice1" name="checkout" value="guest">
-                    <label for="choice1" class="radio-label">checkout as guest</label>
-                </div>
-                <div>
-                    <input type="radio" id="choice2" name="checkout" value="register">
-                    <label for="choice2" class="radio-label">register</label>
-                </div>
-                <div class="accordion-title mt">register and save time!</div>
-                <div class="accordion-text">Register with us for future convenience</div>
-                <div class="accordion-text fa-angle-double-right mb"> Fast and easy checkout</div>
-                <div class="accordion-text fa-angle-double-right mb5"> Easy access to your order history and status</div>
-                <button class="continue continue_width" type="submit">Continue</button>
-            </form>
-            <form class="accordion-right">
-                <div class="accordion-title">Already registed?</div>
-                <div class="accordion-text mb27">Please log in below</div>
-                <label class="radio-label" for="accordion-email">EMAIL ADDRESS <span class="red">*</span></label>
-                <input id="accordion-email" type="email" required class="accordion-input">
-                <label class="radio-label" for="accordion-password">PASSWORD <span class="red">*</span></label>
-                <input id="accordion-password" type="password" required class="accordion-input">
-                <p class="red">* Required Fileds</p>
-                <button class="continue continue_width" type="submit">Log in</button>
-            </form>
-        </div>
-    </details>
-    <hr class="container accordion-hr">
-    <details class="accordion container">
-        <summary class="accordion-head">
-            02.<span class="space"> Billing Information</span>
-        </summary>
-        <div class="accordion-flex">
-            <form class="accordion-left">
-                <div class="accordion-title">Check as a guest or register</div>
-                <div class="accordion-text">Register with us for future convenience</div>
-                <div class="accordion-flex">
-                    <input class="radio-input" type="radio" id="choice3" name="checkout" value="guest">
-                    <label for="choice3" class="radio-label">checkout as guest</label>
-                </div>
-                <div>
-                    <input type="radio" id="choice4" name="checkout" value="register">
-                    <label for="choice4" class="radio-label">register</label>
-                </div>
-                <div class="accordion-title mt">register and save time!</div>
-                <div class="accordion-text">Register with us for future convenience</div>
-                <div class="accordion-text fa-angle-double-right mb"> Fast and easy checkout</div>
-                <div class="accordion-text fa-angle-double-right mb5"> Easy access to your order history and status</div>
-                <button class="continue" type="submit">Continue</button>
-            </form>
-            <form class="accordion-right">
-                <div class="accordion-title">Already registed?</div>
-                <div class="accordion-text mb27">Please log in below</div>
-                <label class="radio-label" for="accordion-email2">EMAIL ADDRESS <span class="red">*</span></label>
-                <input id="accordion-email2" type="email" required class="accordion-input">
-                <label class="radio-label" for="accordion-password2">PASSWORD <span class="red">*</span></label>
-                <input id="accordion-password2" type="password" required class="accordion-input">
-                <p class="red">* Required Fileds</p>
-                <button class="continue" type="submit">Log in</button>
-            </form>
-        </div>
-    </details>
-    <hr class="container accordion-hr">
-    <details class="accordion container">
-        <summary class="accordion-head">
-            03.<span class="space"> Shipping Information</span>
-        </summary>
-        <div class="accordion-flex">
-            <form class="accordion-left">
-                <div class="accordion-title">Check as a guest or register</div>
-                <div class="accordion-text">Register with us for future convenience</div>
-                <div class="accordion-flex">
-                    <input class="radio-input" type="radio" id="choice5" name="checkout" value="guest">
-                    <label for="choice5" class="radio-label">checkout as guest</label>
-                </div>
-                <div>
-                    <input type="radio" id="choice6" name="checkout" value="register">
-                    <label for="choice6" class="radio-label">register</label>
-                </div>
-                <div class="accordion-title mt">register and save time!</div>
-                <div class="accordion-text">Register with us for future convenience</div>
-                <div class="accordion-text fa-angle-double-right mb"> Fast and easy checkout</div>
-                <div class="accordion-text fa-angle-double-right mb5"> Easy access to your order history and status</div>
-                <button class="continue" type="submit">Continue</button>
-            </form>
-            <form class="accordion-right">
-                <div class="accordion-title">Already registed?</div>
-                <div class="accordion-text mb27">Please log in below</div>
-                <label class="radio-label" for="accordion-email3">EMAIL ADDRESS <span class="red">*</span></label>
-                <input id="accordion-email3" type="email" required class="accordion-input">
-                <label class="radio-label" for="accordion-password3">PASSWORD <span class="red">*</span></label>
-                <input id="accordion-password3" type="password" required class="accordion-input">
-                <p class="red">* Required Fileds</p>
-                <button class="continue" type="submit">Log in</button>
-            </form>
-        </div>
-    </details>
-    <hr class="container accordion-hr">
-    <details class="accordion container">
-        <summary class="accordion-head">
-            04.<span class="space"> Shipping Method</span>
-        </summary>
-        <div class="accordion-flex">
-            <form class="accordion-left">
-                <div class="accordion-title">Check as a guest or register</div>
-                <div class="accordion-text">Register with us for future convenience</div>
-                <div class="accordion-flex">
-                    <input class="radio-input" type="radio" id="choice7" name="checkout" value="guest">
-                    <label for="choice7" class="radio-label">checkout as guest</label>
-                </div>
-                <div>
-                    <input type="radio" id="choice8" name="checkout" value="register">
-                    <label for="choice8" class="radio-label">register</label>
-                </div>
-                <div class="accordion-title mt">register and save time!</div>
-                <div class="accordion-text">Register with us for future convenience</div>
-                <div class="accordion-text fa-angle-double-right mb"> Fast and easy checkout</div>
-                <div class="accordion-text fa-angle-double-right mb5"> Easy access to your order history and status</div>
-                <button class="continue" type="submit">Continue</button>
-            </form>
-            <form class="accordion-right">
-                <div class="accordion-title">Already registed?</div>
-                <div class="accordion-text mb27">Please log in below</div>
-                <label class="radio-label" for="accordion-email4">EMAIL ADDRESS <span class="red">*</span></label>
-                <input id="accordion-email4" type="email" required class="accordion-input">
-                <label class="radio-label" for="accordion-password4">PASSWORD <span class="red">*</span></label>
-                <input id="accordion-password4" type="password" required class="accordion-input">
-                <p class="red">* Required Fileds</p>
-                <button class="continue" type="submit">Log in</button>
-            </form>
-        </div>
-    </details>
-    <hr class="container accordion-hr">
-    <details class="accordion container">
-        <summary class="accordion-head">
-            05.<span class="space"> Payment Method</span>
-        </summary>
-        <div class="accordion-flex">
-            <form class="accordion-left">
-                <div class="accordion-title">Check as a guest or register</div>
-                <div class="accordion-text">Register with us for future convenience</div>
-                <div class="accordion-flex">
-                    <input class="radio-input" type="radio" id="choice9" name="checkout" value="guest">
-                    <label for="choice9" class="radio-label">checkout as guest</label>
-                </div>
-                <div>
-                    <input type="radio" id="choice10" name="checkout" value="register">
-                    <label for="choice11" class="radio-label">register</label>
-                </div>
-                <div class="accordion-title mt">register and save time!</div>
-                <div class="accordion-text">Register with us for future convenience</div>
-                <div class="accordion-text fa-angle-double-right mb"> Fast and easy checkout</div>
-                <div class="accordion-text fa-angle-double-right mb5"> Easy access to your order history and status</div>
-                <button class="continue" type="submit">Continue</button>
-            </form>
-            <form class="accordion-right">
-                <div class="accordion-title">Already registed?</div>
-                <div class="accordion-text mb27">Please log in below</div>
-                <label class="radio-label" for="accordion-email5">EMAIL ADDRESS <span class="red">*</span></label>
-                <input id="accordion-email5" type="email" required class="accordion-input">
-                <label class="radio-label" for="accordion-password5">PASSWORD <span class="red">*</span></label>
-                <input id="accordion-password5" type="password" required class="accordion-input">
-                <p class="red">* Required Fileds</p>
-                <button class="continue" type="submit">Log in</button>
-            </form>
-        </div>
-    </details>
-    <hr class="container accordion-hr">
-    <details class="accordion container">
-        <summary class="accordion-head">
-            06.<span class="space"> Order Review</span>
-        </summary>
-        <div class="accordion-flex">
-            <form class="accordion-left">
-                <div class="accordion-title">Check as a guest or register</div>
-                <div class="accordion-text">Register with us for future convenience</div>
-                <div class="accordion-flex">
-                    <input class="radio-input" type="radio" id="choice11" name="checkout" value="guest">
-                    <label for="choice11" class="radio-label">checkout as guest</label>
-                </div>
-                <div>
-                    <input type="radio" id="choice12" name="checkout" value="register">
-                    <label for="choice12" class="radio-label">register</label>
-                </div>
-                <div class="accordion-title mt">register and save time!</div>
-                <div class="accordion-text">Register with us for future convenience</div>
-                <div class="accordion-text fa-angle-double-right mb"> Fast and easy checkout</div>
-                <div class="accordion-text fa-angle-double-right mb5"> Easy access to your order history and status</div>
-                <button class="continue" type="submit">Continue</button>
-            </form>
-            <form class="accordion-right">
-                <div class="accordion-title">Already registed?</div>
-                <div class="accordion-text mb27">Please log in below</div>
-                <label class="radio-label" for="accordion-email6">EMAIL ADDRESS <span class="red">*</span></label>
-                <input id="accordion-email6" type="email" required class="accordion-input">
-                <label class="radio-label" for="accordion-password6">PASSWORD <span class="red">*</span></label>
-                <input id="accordion-password6" type="password" required class="accordion-input">
-                <p class="red">* Required Fileds</p>
-                <button class="continue" type="submit">Log in</button>
-            </form>
-        </div>
-    </details>
-    <hr class="container accordion-hr">
-    <footer class="footer">
-        <div class="feedback-block">
-            <div class="feedback-container container">
-                <figure class="feedback-figure">
-                    <img class="feedback-img" src="img/face.png" alt="feedback">
-                    <div class="feedback-all-text">
-                        <div class="feedback-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, 
-                            a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</div>
-                        <div class="feedback-name">Bin Burhan</div>
-                        <div class="feedback-place">Dhaka, Bd</div>
-                        <div class="slide-box">
-                            <div class="slide-part"></div>
-                            <div class="slide-part"></div>
-                            <div class="slide-part"></div>
-                        </div>
-                    </div>
-                </figure>
-                <div class="br"></div>
-                <div class="subscribe">
-                    <div class="subscribe-text">
-                        <div class="subscribe-head">Subscribe
-                            <div class="subscribe-article">FOR OUR NEWLETTER AND PROMOTION</div>
-                        </div>                         
-                    </div>
-                    <form class="subscribe-form" action="#">
-                        <input class="input-subscribe" type="email" name="simple" placeholder="Enter Your Email">
-                   <button class="subscribe-button button" type="submit">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="footer-text container">
-            <div class="footer-text-left">
-                <a class="logo" href="index.html">
-                    <img src="img/logo.svg" alt="logo">
-                    <p class="brand">Bran<span class="brand-d pink">d</span></p>
-                </a>
-                <div class="footer-text-left-article">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
+    <div class="footer-text container">
+        <div class="footer-text-left">
+            <a class="logo" href="index.html">
+                <img src="img/logo.svg" alt="logo">
+                <p class="brand">Bran<span class="brand-d pink">d</span></p>
+            </a>
+            <div class="footer-text-left-article">Objectively transition extensive data rather than cross functional
+                solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly
+                syndicate an expanded array of processes and cross-unit partnerships.
 
-                    <p class="indent">Efficiently plagiarize 24/365 action items and focused infomediaries.
+                <p class="indent">Efficiently plagiarize 24/365 action items and focused infomediaries.
                     Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
-                        
-                    <p class="indent">Objectively strategize seamless relationships via resource sucking testing procedures. Proactively cultivate next-generation results for value-added methodologies. Dynamically plagiarize unique methodologies after performance based methodologies. Monotonectally empower stand-alone mindshare rather than ubiquitous opportunities. Dynamically orchestrate resource sucking scenarios after alternative synergy.</p>
-                        
-                    <p class="indent">Compellingly envisioneer corporate methods of empowerment before standards compliant technologies. Objectively facilitate progressive.</p>
-                </div>
-            </div>
-            <div class="footer-text-right">
-                <div>
-                    <div class="map-head pink">Company</div>
-                        <ul class="map-list">
-                        <li> <a  class="map-link link" href="index.html">Home</a></li>
-                        <li><a class="map-link link" href="product.html">Shop</a></li>
-                        <li><a class="map-link link" href="#">About</a></li>
-                        <li><a class="map-link link" href="#">How It Works</a></li>
-                        <li><a class="map-link link" href="#">Contact</a></li>
-                        </ul>
-                </div>
-                <div class="map">
-                    <div class="map-head pink">Information</div>
-                        <ul class="map-list">
-                        <li> <a  class="map-link link" href="#">Terms & Condition</a></li>
-                        <li><a class="map-link link" href="#">Privacy Policy</a></li>
-                        <li><a class="map-link link" href="#">How to Buy</a></li>
-                        <li><a class="map-link link" href="#">How to Sell</a></li>
-                        <li><a class="map-link link" href="#">Promotion</a></li>
-                        </ul>
-                </div>
-                <div class="map">
-                    <div class="map-head pink">Shop Category</div>
-                        <ul class="map-list">
-                        <li> <a  class="map-link link" href="product.html">Men</a></li>
-                        <li><a class="map-link link" href="product.html">Women</a></li>
-                        <li><a class="map-link link" href="product.html">Child</a></li>
-                        <li><a class="map-link link" href="#">Apparel</a></li>
-                        <li><a class="map-link link" href="product.html">Brows All</a></li>
-                        </ul>
-                </div>
+
+                <p class="indent">Objectively strategize seamless relationships via resource sucking testing procedures.
+                    Proactively cultivate next-generation results for value-added methodologies. Dynamically plagiarize
+                    unique methodologies after performance based methodologies. Monotonectally empower stand-alone
+                    mindshare rather than ubiquitous opportunities. Dynamically orchestrate resource sucking scenarios
+                    after alternative synergy.</p>
+
+                <p class="indent">Compellingly envisioneer corporate methods of empowerment before standards compliant
+                    technologies. Objectively facilitate progressive.</p>
             </div>
         </div>
-            <div class="footer-bottom">
-                <div class="container flex">
-                <div class="footer-bottom-copy">
-                    &copy; 2021  Brand  All Rights Reserved.
-                 </div>
-                 <div class="footer-bottom-social">
-                        <ul>
-                          <li class="icon">
-                            <a class="social fa-facebook" href="#"></a>
-                          </li>
-                          <li class="icon">
-                            <a class="social fa-twitter" href="#"></a>
-                          </li>
-                          <li class="icon">
-                            <a class="social fa-linkedin-in" href="#"></a>
-                          </li>
-                          <li class="icon">
-                            <a class="social fa-pinterest-p" href="#"></a>
-                          </li>
-                          <li class="icon">
-                            <a class="social fa-google-plus-g" href="#"></a>
-                          </li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="footer-text-right">
+            <div>
+                <div class="map-head pink">Company</div>
+                <ul class="map-list">
+                    <li> <a class="map-link link" href="index.html">Home</a></li>
+                    <li><a class="map-link link" href="product.html">Shop</a></li>
+                    <li><a class="map-link link" href="#">About</a></li>
+                    <li><a class="map-link link" href="#">How It Works</a></li>
+                    <li><a class="map-link link" href="#">Contact</a></li>
+                </ul>
             </div>
-    </footer>   
+            <div class="map">
+                <div class="map-head pink">Information</div>
+                <ul class="map-list">
+                    <li> <a class="map-link link" href="#">Terms & Condition</a></li>
+                    <li><a class="map-link link" href="#">Privacy Policy</a></li>
+                    <li><a class="map-link link" href="#">How to Buy</a></li>
+                    <li><a class="map-link link" href="#">How to Sell</a></li>
+                    <li><a class="map-link link" href="#">Promotion</a></li>
+                </ul>
+            </div>
+            <div class="map">
+                <div class="map-head pink">Shop Category</div>
+                <ul class="map-list">
+                    <li> <a class="map-link link" href="product.html">Men</a></li>
+                    <li><a class="map-link link" href="product.html">Women</a></li>
+                    <li><a class="map-link link" href="product.html">Child</a></li>
+                    <li><a class="map-link link" href="#">Apparel</a></li>
+                    <li><a class="map-link link" href="product.html">Brows All</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container flex">
+            <div class="footer-bottom-copy">
+                &copy; 2021 Brand All Rights Reserved.
+            </div>
+            <div class="footer-bottom-social">
+                <ul>
+                    <li class="icon">
+                        <a class="social fa-facebook" href="#"></a>
+                    </li>
+                    <li class="icon">
+                        <a class="social fa-twitter" href="#"></a>
+                    </li>
+                    <li class="icon">
+                        <a class="social fa-linkedin-in" href="#"></a>
+                    </li>
+                    <li class="icon">
+                        <a class="social fa-pinterest-p" href="#"></a>
+                    </li>
+                    <li class="icon">
+                        <a class="social fa-google-plus-g" href="#"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="script-checkout.js"></script>
 </body>
+
 </html>
