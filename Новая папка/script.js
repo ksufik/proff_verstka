@@ -10,7 +10,7 @@ class ProductItem {
     /**
  * Разметка товара на экране
 */
-    show() {
+    show() {//не придумала, как еще получать информацию о нужном нам объекте в корзину, кроме как считывать из атрибутов даты, т.к. к products доступа нет - подскажите правильный вариант пожалуйста
         return `<div class="item">
                 <a  class="product-card"> <!--href="single-page.html"-->
                     <img class="product-img" src="${this.imageUrl}" alt="${this.name}">
@@ -57,7 +57,8 @@ class ProductList {
 }
 
 
-class CartItem {//!!!!!!!!!!!!!!!следует ли корзину делать потомком товара? тогда дублирования кода в конструкторе можно было бы избежать 
+
+class CartItem {//следует ли корзину делать потомком товара? тогда дублирования кода в конструкторе можно было бы избежать 
     constructor(id, name, price, imageUrl, count = 1) {
         this.id = id;
         this.name = name;
@@ -67,7 +68,7 @@ class CartItem {//!!!!!!!!!!!!!!!следует ли корзину делать
     }
 
     /**
- * Разметка для 1 товара в корзине
+ * Разметка товара в корзине
 */
     cartShow() {
         return `     <figure class="my-account-item">
@@ -97,7 +98,7 @@ class CartItem {//!!!!!!!!!!!!!!!следует ли корзину делать
                         <i class="fas fa-star"></i>
                     </label>
                 </div>
-                <div class="my-acc-text"><span class="product-count" data-id="${this.id}">${this.count}</span><span class="text-x">x</span>$${this.price}</div>
+                <div class="my-acc-text">${this.count}<span class="text-x">x</span>$${this.price}</div>
             </div>
             <a class="fas fa-times-circle"  data-id="${this.id}" href="#"></a>
         </div>
@@ -106,128 +107,150 @@ class CartItem {//!!!!!!!!!!!!!!!следует ли корзину делать
 
 }
 class CartList {
-    constructor(container = '.my-account-menu-box', productCountContainer = '.product-count', totalContainer = 'sum', countContainer = '.cart-count') {
+    constructor(event, container = '.my-account-menu-box') {
         this.container = container;
-        this.productCountContainer = productCountContainer;
-        this.totalContainer = totalContainer;
-        this.countContainer = countContainer;
         this.cartProducts = [];
+        // this.productId = productId;
+        // this.productName = productName;
+        // this.productPrice = productPrice;
+        // this.productImage = productImage;
+
+        this.event = event;
+
+        this.fetchCartGoods();
+        this.#render();
     }
 
-    add(event) {
-        let productId = event.dataset.id;
-        let productName = event.dataset.name;
-        let productPrice = event.dataset.price;
-        let productImage = event.dataset.imageurl;
-
+    fetchCartGoods() {
+        let productId = this.event.dataset.id;
+        let productName = this.event.dataset.name;
+        let productPrice = this.event.dataset.price;
+        let productImage = this.event.dataset.imageurl;
         if (this.cartProducts.length === 0) {
             this.cartProducts[0] = new CartItem(productId, productName, productPrice, productImage);
-            this.wholeCartRender();
         } else {
             let a = this.cartProducts.findIndex(item => item.id === productId);
             if (a != -1) {
                 this.cartProducts[a].count++;
-                this.countCartRender(this.cartProducts[a]);
-                this.productCount();
-                this.total();
             } else {
                 this.cartProducts.push(new CartItem(productId, productName, productPrice, productImage));
-                this.newProductCartRender();
             }
         }
 
+        //  cartProducts[0].total();
+        console.log(this.cartProducts);
     }
 
-    /**
-     * Отрисовка 1 товара в корзине
-    */
-    newProductCartRender() {
-        const accMenu = document.querySelector(this.container);
-        accMenu.insertAdjacentHTML('afterbegin', this.cartProducts[this.cartProducts.length - 1].cartShow());
-        this.productCount();
-        this.total();
-        this.remove();
-    }
-
-    /**
- * Отрисовка всех товаров в корзине
-*/
-    wholeCartRender() {
+    #render() {
         const accMenu = document.querySelector(this.container);
         accMenu.innerText = '';
         this.cartProducts.forEach(el => {
             accMenu.insertAdjacentHTML('afterbegin', el.cartShow());
+            // el.total(el.price, el.count); - логичнее тотал было бы вызывать здесь c аргументами, но я сделала как мне было проще
         });
-        this.productCount();
-        this.total();
-        this.remove();
     }
 
-    /**
-* Отрисовка кол-ва  товара в корзине
-*/
-    countCartRender(count) {
-        const accText = document.querySelectorAll(this.productCountContainer);
-        accText.forEach(el => {
-            if (el.dataset.id === count.id) { el.textContent = `${count.count}` };
-        });
-    }
+
 
     /**
     * Считает кол-во товара и выводит на экран
     */
     productCount() {
         let counter = 0;
-        let cartCount = document.querySelector(this.countContainer);
-        this.cartProducts.forEach(el => {
+        let cartCount = document.querySelector('.cart-count');
+        cartProducts.forEach(el => {
             if (el.count != 1) {
                 counter += el.count - 1;
             }
         });
-        cartCount.innerText = `${this.cartProducts.length + counter}`;
+        cartCount.innerText = `${cartProducts.length + counter}`;
     }
 
     /**
      * Считает сумму корзины
     */
 
-    total() {
+    total() {//мне кажется, этот метод было грамотнее через this делать и перебирать не здесь, а при вызове и передавать сюда цену и кол-во, но тогда бы пришлось для удаления делать отдельно
         let cost = 0;
-        let sum = document.getElementById(this.totalContainer);
-        this.cartProducts.forEach((el) => {
+        let sum = document.getElementById('sum');
+        cartProducts.forEach((el) => {
             cost += el.price * el.count;
         });
         sum.innerText = `${cost}$`;
+
+        cartProducts[0].productCount();
+        //cartProducts[0].productDelete();
     }
 
     // /**
     // * Удаляет товар из корзины
     // */
-    remove() {
-        let del = document.querySelectorAll('.fa-times-circle');
-        del.forEach(cross => {
-            cross.addEventListener('click', event => {
-                let crossId = event.currentTarget.dataset.id;
-                let indx = this.cartProducts.findIndex(item => item.id == crossId);
-                if (indx != -1) {
-                    this.cartProducts.splice(indx, 1);
-                }
-                console.log(this.cartProducts);
-                this.wholeCartRender();
-            });
-        });
-
-    }
+    // productDelete() {
+    //     let del = document.querySelectorAll('.fa-times-circle');
+    //     del.forEach(cross => {
+    //         cross.addEventListener('click', function (event) {
+    //             let crossId = event.currentTarget.dataset.id;
+    //             let indx = cartProducts.findIndex(item => item.id == crossId);
+    //             if (indx != -1) {
+    //                 cartProducts.splice(indx, 1);
+    //             }
+    //             accMenu.innerText = '';
+    //             cartProducts.forEach(el => {
+    //                 accMenu.insertAdjacentHTML('afterbegin', el.cartShow());
+    //                 el.total();
+    //                 el.productCount();
+    //             });
+    //             if (cartProducts.length == 0) {
+    //                 console.log('zero');
+    //                 sum.innerText = `0$`;
+    //                 cartCount.innerText = `0`;
+    //             }
+    //         });
+    //     });
+    // }
 }
 
 
 const list = new ProductList();
-const cart = new CartList();
+
+//let cartProducts = [];
+//let accMenu = document.querySelector('.my-account-menu-box');
+
+//let cartCount = document.querySelector('.cart-count');
+
 
 let addToCart = document.querySelectorAll('.add-to-cart');
+//let cartProducts = [];
+//let accMenu = document.querySelector('.my-account-menu-box');
 
 addToCart.forEach(addTo => {
-    addTo.addEventListener('click', el => {
-        cart.add(el.currentTarget);
+    addTo.addEventListener('click', function (event) {
+        new CartList(event.currentTarget);
     });
 });
+
+// addToCart.forEach(addTo => {
+//     addTo.addEventListener('click', function (event) {//у меня не получилось вынести обработчик отдельно - как это сделать?
+//         let productId = event.currentTarget.dataset.id;
+//         let productName = event.currentTarget.dataset.name;
+//         let productPrice = event.currentTarget.dataset.price;
+//         let productImage = event.currentTarget.dataset.imageurl;
+//         if (cartProducts.length == 0) {
+//             cartProducts[0] = new CartItem(productId, productName, productPrice, productImage);
+//         } else {
+//             let a = cartProducts.findIndex(item => item.id == productId);
+//             if (a != -1) {
+//                 cartProducts[a].count++;
+//             } else {
+//                 cartProducts.push(new CartItem(productId, productName, productPrice, productImage));
+//             }
+//         }
+//         accMenu.innerText = '';
+//         cartProducts.forEach(function (el) {
+//             accMenu.insertAdjacentHTML('afterbegin', el.cartShow());
+//             // el.total(el.price, el.count); - логичнее тотал было бы вызывать здесь c аргументами, но я сделала как мне было проще
+//         });
+//         //  cartProducts[0].total();
+//         console.log(cartProducts);
+//     });
+//});
